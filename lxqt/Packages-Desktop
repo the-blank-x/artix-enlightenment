@@ -33,7 +33,6 @@ libmongoc
 lxqt
 
 compton
-#compton-conf
 lximage-qt
 qpdfview
 gvfs

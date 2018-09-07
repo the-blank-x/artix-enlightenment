@@ -14,3 +14,6 @@ virtualbox-guest-modules-artix
 virtualbox-guest-utils
 open-vm-tools
 broadcom-wl
+
+intel-ucode
+amd-ucode

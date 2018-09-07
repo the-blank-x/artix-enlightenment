@@ -25,7 +25,6 @@ grep
 grub
 gzip
 inetutils
-#intel-ucode
 iproute2
 iptables
 iputils
