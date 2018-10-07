@@ -12,7 +12,7 @@ partitionmanager
 
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
-open-vm-tools
+#open-vm-tools
 broadcom-wl
 
 intel-ucode

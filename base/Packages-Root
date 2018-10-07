@@ -24,6 +24,7 @@ glibc
 grep
 grub
 gzip
+htop
 inetutils
 iproute2
 iptables
