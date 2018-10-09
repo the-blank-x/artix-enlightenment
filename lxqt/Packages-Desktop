@@ -9,22 +9,22 @@ modemmanager
 network-manager-applet
 nss-mdns
 
->openrc alsa-utils-openrc
->openrc avahi-openrc
->openrc displaymanager-openrc
->openrc json-c
->openrc networkmanager-openrc
->openrc ntp-openrc
->openrc openrc-settingsd
->openrc bluez-openrc
+@openrc alsa-utils-openrc
+@openrc avahi-openrc
+@openrc displaymanager-openrc
+@openrc json-c
+@openrc networkmanager-openrc
+@openrc ntp-openrc
+@openrc openrc-settingsd
+@openrc bluez-openrc
 
->runit alsa-utils-runit
->runit avahi-runit
->runit sddm-runit
->runit json-c
->runit networkmanager-runit
->runit ntp-runit
->runit bluez-runit
+@runit alsa-utils-runit
+@runit avahi-runit
+@runit sddm-runit
+@runit json-c
+@runit networkmanager-runit
+@runit ntp-runit
+@runit bluez-runit
 
 librabbitmq-c
 libmongoc

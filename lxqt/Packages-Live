@@ -2,8 +2,8 @@ mkinitcpio-nfs-utils
 squashfs-tools
 nbd
 
->openrc artix-live-openrc
->runit artix-live-runit
+@openrc artix-live-openrc
+@runit artix-live-runit
 artix-live-portable-efi
 
 calamares-branding

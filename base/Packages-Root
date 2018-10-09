@@ -45,29 +45,29 @@ mkinitcpio-openswap
 nano
 net-tools
 ntfs-3g
->openrc acpid-openrc
->openrc cronie-openrc
->openrc cryptsetup-openrc
->openrc dhcpcd-openrc
->openrc haveged-openrc
->openrc lvm2-openrc
->openrc mdadm-openrc
->openrc nfs-utils-openrc
->openrc rsync-openrc
->openrc openssh-openrc
->openrc wpa_supplicant-openrc
->openrc syslog-ng-openrc
->runit acpid-runit
->runit cronie-runit
->runit dhcpcd-runit
->runit haveged-runit
->runit lvm2-runit
->runit mdadm-runit
->runit nfs-utils-runit
->runit rsync-runit
->runit openssh-runit
->runit wpa_supplicant-runit
->runit syslog-ng-runit
+@openrc acpid-openrc
+@openrc cronie-openrc
+@openrc cryptsetup-openrc
+@openrc dhcpcd-openrc
+@openrc haveged-openrc
+@openrc lvm2-openrc
+@openrc mdadm-openrc
+@openrc nfs-utils-openrc
+@openrc rsync-openrc
+@openrc openssh-openrc
+@openrc wpa_supplicant-openrc
+@openrc syslog-ng-openrc
+@runit acpid-runit
+@runit cronie-runit
+@runit dhcpcd-runit
+@runit haveged-runit
+@runit lvm2-runit
+@runit mdadm-runit
+@runit nfs-utils-runit
+@runit rsync-runit
+@runit openssh-runit
+@runit wpa_supplicant-runit
+@runit syslog-ng-runit
 artix-sysvcompat
 os-prober
 pacman

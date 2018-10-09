@@ -2,14 +2,14 @@ mkinitcpio-nfs-utils
 squashfs-tools
 nbd
 
->openrc artix-live-openrc
->runit artix-live-runit
+@openrc artix-live-openrc
+@runit artix-live-runit
 artix-live-portable-efi
 
->openrc networkmanager-openrc
->openrc ntp-openrc
->openrc bluez-openrc
+@openrc networkmanager-openrc
+@openrc ntp-openrc
+@openrc bluez-openrc
 
->runit networkmanager-runit
->runit ntp-runit
->runit bluez-runit
+@runit networkmanager-runit
+@runit ntp-runit
+@runit bluez-runit
