@@ -13,3 +13,6 @@ artix-live-portable-efi
 @runit networkmanager-runit
 @runit ntp-runit
 @runit bluez-runit
+
+intel-ucode
+amd-ucode
