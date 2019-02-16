@@ -45,9 +45,9 @@ mkinitcpio-openswap
 nano
 net-tools
 ntfs-3g
-cryptsetup
 @openrc acpid-openrc
 @openrc cronie-openrc
+@openrc cryptsetup-openrc
 @openrc dhcpcd-openrc
 @openrc haveged-openrc
 @openrc lvm2-openrc
