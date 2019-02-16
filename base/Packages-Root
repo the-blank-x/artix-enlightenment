@@ -59,6 +59,7 @@ ntfs-3g
 @openrc syslog-ng-openrc
 @runit acpid-runit
 @runit cronie-runit
+@runit cryptsetup-runit
 @runit dhcpcd-runit
 @runit haveged-runit
 @runit lvm2-runit
