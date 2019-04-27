@@ -1,0 +1,92 @@
+acpi
+b43-fwcutter
+bash
+btrfs-progs
+bzip2
+coreutils
+crda
+dhclient
+diffutils
+dmraid
+dnsmasq
+dosfstools
+e2fsprogs
+ecryptfs-utils
+exfat-utils
+f2fs-tools
+file
+filesystem
+findutils
+gawk
+gcc-libs
+gettext
+glibc
+grep
+grub
+gzip
+htop
+inetutils
+iproute2
+iptables
+iputils
+ipw2100-fw
+ipw2200-fw
+jfsutils
+linux
+less
+licenses
+linux-firmware
+logrotate
+lsb-release
+man-db
+man-pages
+memtest86+
+mkinitcpio-openswap
+nano
+net-tools
+ntfs-3g
+@openrc acpid-openrc
+@openrc cronie-openrc
+@openrc cryptsetup-openrc
+@openrc dhcpcd-openrc
+@openrc haveged-openrc
+@openrc lvm2-openrc
+@openrc mdadm-openrc
+@openrc nfs-utils-openrc
+@openrc rsync-openrc
+@openrc openssh-openrc
+@openrc wpa_supplicant-openrc
+@openrc syslog-ng-openrc
+@runit acpid-runit
+@runit cronie-runit
+@runit cryptsetup-runit
+@runit dhcpcd-runit
+@runit haveged-runit
+@runit lvm2-runit
+@runit mdadm-runit
+@runit nfs-utils-runit
+@runit rsync-runit
+@runit openssh-runit
+@runit wpa_supplicant-runit
+@runit syslog-ng-runit
+artix-sysvcompat
+os-prober
+pacman
+pciutils
+perl
+procps-ng
+psmisc
+reiserfsprogs
+sed
+shadow
+s-nail
+sudo
+sysfsutils
+tar
+texinfo
+usbutils
+util-linux
+which
+efibootmgr
+xfsprogs
+zsh
