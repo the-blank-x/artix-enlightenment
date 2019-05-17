@@ -1,3 +1,5 @@
+### packages added here will be installed on the target system
+
 acpi
 b43-fwcutter
 bash
@@ -90,3 +92,14 @@ which
 efibootmgr
 xfsprogs
 zsh
+
+## server
+@openrc apache-openrc
+#@openrc mysql-openrc
+@openrc postgresql-openrc
+#@openrc cups-openrc
+php
+php-apache
+php-cgi
+
+base-devel
