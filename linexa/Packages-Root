@@ -101,5 +101,6 @@ zsh
 php
 php-apache
 php-cgi
+@openrc backuppc-openrc
 
 base-devel
