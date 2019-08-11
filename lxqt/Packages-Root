@@ -1,0 +1,168 @@
+acpi
+b43-fwcutter
+bash
+btrfs-progs
+bzip2
+coreutils
+crda
+dhclient
+diffutils
+dmraid
+dnsmasq
+dosfstools
+e2fsprogs
+ecryptfs-utils
+exfat-utils
+f2fs-tools
+file
+filesystem
+findutils
+gawk
+gcc-libs
+gettext
+glibc
+grep
+grub
+gzip
+htop
+inetutils
+iproute2
+iptables
+iputils
+ipw2100-fw
+ipw2200-fw
+jfsutils
+linux
+less
+licenses
+linux-firmware
+logrotate
+lsb-release
+man-db
+man-pages
+memtest86+
+mkinitcpio-openswap
+nano
+net-tools
+ntfs-3g
+@openrc acpid-openrc
+@openrc cronie-openrc
+@openrc cryptsetup-openrc
+@openrc dhcpcd-openrc
+@openrc haveged-openrc
+@openrc lvm2-openrc
+@openrc mdadm-openrc
+@openrc nfs-utils-openrc
+@openrc rsync-openrc
+@openrc openssh-openrc
+@openrc wpa_supplicant-openrc
+@openrc syslog-ng-openrc
+@runit acpid-runit
+@runit cronie-runit
+@runit cryptsetup-runit
+@runit dhcpcd-runit
+@runit haveged-runit
+@runit lvm2-runit
+@runit mdadm-runit
+@runit nfs-utils-runit
+@runit rsync-runit
+@runit openssh-runit
+@runit wpa_supplicant-runit
+@runit syslog-ng-runit
+artix-sysvcompat
+os-prober
+pacman
+pciutils
+perl
+procps-ng
+psmisc
+reiserfsprogs
+sed
+shadow
+s-nail
+sudo
+sysfsutils
+tar
+texinfo
+usbutils
+util-linux
+which
+efibootmgr
+xfsprogs
+zsh
+
+artix-sddm-theme
+artix-lxqt-presets
+
+alsa-firmware
+powertop
+inxi
+
+@openrc connman-openrc
+@runit connman-runit
+cmst
+
+#modemmanager
+#network-manager-applet
+#nss-mdns
+
+@openrc alsa-utils-openrc
+@openrc avahi-openrc
+@openrc displaymanager-openrc
+#@openrc json-c
+#@openrc networkmanager-openrc
+@openrc ntp-openrc
+@openrc openrc-settingsd
+@openrc bluez-openrc
+
+@runit alsa-utils-runit
+@runit avahi-runit
+@runit sddm-runit
+#@runit json-c
+#@runit networkmanager-runit
+@runit ntp-runit
+@runit bluez-runit
+
+librabbitmq-c
+libmongoc
+
+lxqt
+
+compton
+lximage-qt
+qpdfview
+gvfs
+kwrite
+obconf-qt
+pcmanfm-qt
+falkon
+xarchiver
+
+vlc
+
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+
+xdg-user-dirs
+xdg-utils
+
+xorg-server
+xorg-xinit
+
+xf86-input-vmmouse
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-sisusb
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo
