@@ -1,1 +1,0 @@
-../../../base/live-overlay/etc/sudoers.d

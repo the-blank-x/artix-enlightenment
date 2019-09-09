@@ -90,3 +90,24 @@ which
 efibootmgr
 xfsprogs
 zsh
+
+mkinitcpio-nfs-utils
+squashfs-tools
+nbd
+
+@openrc artix-live-openrc
+@runit artix-live-runit
+artix-live-portable-efi
+
+#@openrc networkmanager-openrc
+@openrc connman-openrc
+@openrc ntp-openrc
+@openrc bluez-openrc
+
+#@runit networkmanager-runit
+@runit connman-runit
+@runit ntp-runit
+@runit bluez-runit
+
+intel-ucode
+amd-ucode
