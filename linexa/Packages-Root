@@ -1,5 +1,8 @@
 ### packages added here will be installed on the target system
-
+base
+@openrc openrc
+@runit runit
+@s6 s6
 acpi
 b43-fwcutter
 bash
@@ -51,6 +54,7 @@ ntfs-3g
 @openrc cronie-openrc
 @openrc cryptsetup-openrc
 @openrc dhcpcd-openrc
+@openrc elogind-openrc
 @openrc haveged-openrc
 @openrc lvm2-openrc
 @openrc mdadm-openrc
@@ -63,6 +67,7 @@ ntfs-3g
 @runit cronie-runit
 @runit cryptsetup-runit
 @runit dhcpcd-runit
+@runit elogind-runit
 @runit haveged-runit
 @runit lvm2-runit
 @runit mdadm-runit
@@ -71,7 +76,9 @@ ntfs-3g
 @runit openssh-runit
 @runit wpa_supplicant-runit
 @runit syslog-ng-runit
-artix-sysvcompat
+@s6 dhcpcd-s6
+@s6 elogind-s6
+@s6 syslog-ng-s6
 os-prober
 pacman
 pciutils
