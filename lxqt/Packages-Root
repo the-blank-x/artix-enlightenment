@@ -99,16 +99,12 @@ efibootmgr
 xfsprogs
 zsh
 
-artix-sddm-theme
-artix-lxqt-presets
-
 alsa-firmware
 powertop
 inxi
 
 @openrc connman-openrc
 @runit connman-runit
-cmst
 
 #modemmanager
 #network-manager-applet
@@ -134,15 +130,8 @@ cmst
 librabbitmq-c
 libmongoc
 
-lxqt
-
-compton
-lximage-qt
-qpdfview
 gvfs
 kwrite
-obconf-qt
-pcmanfm-qt
 falkon
 xarchiver
 
@@ -174,3 +163,7 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
+
+
+artix-sddm-theme
+artix-lxqt-presets
