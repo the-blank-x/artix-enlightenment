@@ -4,10 +4,11 @@ nbd
 
 @openrc artix-live-openrc
 @runit artix-live-runit
+# @s6 artix-live-s6
+
 artix-live-portable-efi
 
 calamares-branding
-#partitionmanager
 #orca
 gparted
 
@@ -19,4 +20,3 @@ broadcom-wl
 intel-ucode
 amd-ucode
 artix-docs
-#konversation

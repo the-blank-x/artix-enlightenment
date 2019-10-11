@@ -2,12 +2,12 @@ base
 @openrc openrc
 @runit runit
 @s6 s6
+@openrc elogind-openrc
+@runit elogind-runit
+@s6 elogind-s6
 acpi
 b43-fwcutter
-bash
 btrfs-progs
-bzip2
-coreutils
 crda
 dhclient
 diffutils
@@ -18,27 +18,14 @@ e2fsprogs
 ecryptfs-utils
 exfat-utils
 f2fs-tools
-file
-filesystem
-findutils
-gawk
-gcc-libs
-gettext
-glibc
-grep
 grub
-gzip
 htop
 inetutils
-iproute2
 iptables
-iputils
 ipw2100-fw
 ipw2200-fw
 jfsutils
 linux
-less
-licenses
 linux-firmware
 logrotate
 lsb-release
@@ -53,7 +40,6 @@ ntfs-3g
 @openrc cronie-openrc
 @openrc cryptsetup-openrc
 @openrc dhcpcd-openrc
-@openrc elogind-openrc
 @openrc haveged-openrc
 @openrc lvm2-openrc
 @openrc mdadm-openrc
@@ -66,7 +52,6 @@ ntfs-3g
 @runit cronie-runit
 @runit cryptsetup-runit
 @runit dhcpcd-runit
-@runit elogind-runit
 @runit haveged-runit
 @runit lvm2-runit
 @runit mdadm-runit
@@ -75,25 +60,25 @@ ntfs-3g
 @runit openssh-runit
 @runit wpa_supplicant-runit
 @runit syslog-ng-runit
+# @s6 acpid-s6
+# @s6 cronie-s6
+# @s6 cryptsetup-s6
 @s6 dhcpcd-s6
-@s6 elogind-s6
+# @s6 haveged-s6
+# @s6 lvm2-s6
+# @s6 mdadm-s6
+# @s6 nfs-utils-s6
+# @s6 rsync-s6
+# @s6 openssh-s6
+# @s6 wpa_supplicant-s6
 @s6 syslog-ng-s6
 os-prober
-pacman
-pciutils
-perl
-procps-ng
-psmisc
 reiserfsprogs
-sed
-shadow
 s-nail
 sudo
 sysfsutils
-tar
 texinfo
 usbutils
-util-linux
 which
 efibootmgr
 xfsprogs
@@ -103,39 +88,28 @@ alsa-firmware
 powertop
 inxi
 
-@openrc connman-openrc
-@runit connman-runit
-
-#modemmanager
-#network-manager-applet
-#nss-mdns
-
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
+@openrc connman-openrc
 @openrc displaymanager-openrc
-#@openrc json-c
-#@openrc networkmanager-openrc
 @openrc ntp-openrc
 @openrc openrc-settingsd
 @openrc bluez-openrc
-
 @runit alsa-utils-runit
 @runit avahi-runit
-@runit sddm-runit
-#@runit json-c
-#@runit networkmanager-runit
-@runit ntp-runit
 @runit bluez-runit
+@runit connman-runit
+@runit ntp-runit
+@runit sddm-runit
+# @s6 alsa-utils-s6
+# @s6 avahi-s6
+# @s6 bluez-s6
+# @s6 connman-s6
+# @s6 ntp-s6
+# @s6 sddm-s6
 
 librabbitmq-c
 libmongoc
-
-gvfs
-kwrite
-falkon
-xarchiver
-
-vlc
 
 terminus-font
 ttf-bitstream-vera
@@ -167,3 +141,9 @@ xf86-video-voodoo
 
 artix-sddm-theme
 artix-lxqt-presets
+
+gvfs
+kwrite
+falkon
+xarchiver
+vlc
