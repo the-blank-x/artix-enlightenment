@@ -1,7 +1,4 @@
 base
-@openrc openrc
-@runit runit
-@s6 s6
 @openrc elogind-openrc
 @runit elogind-runit
 @s6 elogind-s6
