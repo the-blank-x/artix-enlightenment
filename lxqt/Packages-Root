@@ -62,13 +62,13 @@ ntfs-3g
 # @s6 cronie-s6
 # @s6 cryptsetup-s6
 @s6 dhcpcd-s6
-# @s6 haveged-s6
+@s6 haveged-s6
 # @s6 lvm2-s6
 # @s6 mdadm-s6
 # @s6 nfs-utils-s6
 # @s6 rsync-s6
 # @s6 openssh-s6
-# @s6 wpa_supplicant-s6
+@s6 wpa_supplicant-s6
 @s6 syslog-ng-s6
 os-prober
 reiserfsprogs
@@ -145,3 +145,4 @@ kwrite
 falkon
 xarchiver
 vlc
+breeze-icons

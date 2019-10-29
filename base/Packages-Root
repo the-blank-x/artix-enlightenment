@@ -30,7 +30,6 @@ lsb-release
 man-db
 man-pages
 memtest86+
-mkinitcpio-openswap
 nano
 net-tools
 ntfs-3g
@@ -62,13 +61,13 @@ ntfs-3g
 # @s6 cronie-s6
 # @s6 cryptsetup-s6
 @s6 dhcpcd-s6
-# @s6 haveged-s6
+@s6 haveged-s6
 # @s6 lvm2-s6
 # @s6 mdadm-s6
 # @s6 nfs-utils-s6
 # @s6 rsync-s6
 # @s6 openssh-s6
-# @s6 wpa_supplicant-s6
+@s6 wpa_supplicant-s6
 @s6 syslog-ng-s6
 os-prober
 reiserfsprogs
@@ -88,7 +87,7 @@ nbd
 
 @openrc artix-live-openrc
 @runit artix-live-runit
-# @s6 artix-live-s6
+@s6 artix-live-s6
 artix-live-portable-efi
 
 @openrc connman-openrc
