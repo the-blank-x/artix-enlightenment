@@ -58,16 +58,16 @@ ntfs-3g
 @runit openssh-runit
 @runit wpa_supplicant-runit
 @runit syslog-ng-runit
-# @s6 acpid-s6
-# @s6 cronie-s6
-# @s6 cryptsetup-s6
+@s6 acpid-s6
+@s6 cronie-s6
+@s6 cryptsetup-s6
 @s6 dhcpcd-s6
 @s6 haveged-s6
-# @s6 lvm2-s6
-# @s6 mdadm-s6
-# @s6 nfs-utils-s6
-# @s6 rsync-s6
-# @s6 openssh-s6
+@s6 lvm2-s6
+@s6 mdadm-s6
+@s6 nfs-utils-s6
+@s6 rsync-s6
+@s6 openssh-s6
 @s6 wpa_supplicant-s6
 @s6 syslog-ng-s6
 os-prober
@@ -98,13 +98,13 @@ inxi
 @runit bluez-runit
 @runit connman-runit
 @runit ntp-runit
-@runit sddm-runit
-# @s6 alsa-utils-s6
-# @s6 avahi-s6
-# @s6 bluez-s6
-# @s6 connman-s6
-# @s6 ntp-s6
-# @s6 sddm-s6
+@runit lightdm-runit
+@s6 alsa-utils-s6
+@s6 avahi-s6
+@s6 bluez-s6
+@s6 connman-s6
+@s6 ntp-s6
+@s6 lightdm-s6
 
 librabbitmq-c
 libmongoc
