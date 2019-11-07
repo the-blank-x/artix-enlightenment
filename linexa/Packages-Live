@@ -6,6 +6,7 @@ nbd
 
 @openrc artix-live-openrc
 @runit artix-live-runit
+@s6 artix-live-s6
 artix-live-portable-efi
 artix-sddm-theme
 artix-lxqt-presets
@@ -19,11 +20,16 @@ artix-docs
 @runit ntp-runit
 @runit bluez-runit
 
+@s6 connman-s6
+@s6 ntp-s6
+@s6 bluez-s6
+
 intel-ucode
 amd-ucode
 sddm
 @openrc displaymanager-openrc
 @runit sddm-runit
+@s6 sddm-s6
 cmst
 
 calamares-branding
