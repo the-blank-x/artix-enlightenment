@@ -30,6 +30,7 @@ lsb-release
 man-db
 man-pages
 memtest86+
+mkinitcpio
 nano
 net-tools
 ntfs-3g
