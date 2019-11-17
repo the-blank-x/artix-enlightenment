@@ -89,7 +89,8 @@ nbd
 @openrc artix-live-openrc
 @runit artix-live-runit
 @s6 artix-live-s6
-artix-live-portable-efi
+
+artix-grub-theme
 
 @openrc connman-openrc
 @openrc ntp-openrc

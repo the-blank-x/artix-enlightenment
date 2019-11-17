@@ -7,7 +7,9 @@ nbd
 @openrc artix-live-openrc
 @runit artix-live-runit
 @s6 artix-live-s6
-artix-live-portable-efi
+
+artix-grub-theme
+
 artix-sddm-theme
 artix-lxqt-presets
 artix-docs

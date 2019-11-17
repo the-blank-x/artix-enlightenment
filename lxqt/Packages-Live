@@ -6,11 +6,10 @@ nbd
 @runit artix-live-runit
 @s6 artix-live-s6
 
-artix-live-portable-efi
+artix-grub-theme
 
 calamares-branding
 partitionmanager
-#orca
 
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
