@@ -111,11 +111,11 @@ librabbitmq-c
 libmongoc
 
 terminus-font
-ttf-bitstream-vera
-ttf-dejavu
 ttf-droid
+ttf-roboto
+ttf-roboto-mono
 ttf-inconsolata
-ttf-indic-otf
+#ttf-indic-otf
 ttf-liberation
 
 xdg-user-dirs
@@ -141,4 +141,8 @@ artix-mate-presets
 
 light-locker
 lightdm-gtk-greeter
+pluma
 connman-gtk
+midori
+hexchat
+mpv
