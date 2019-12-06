@@ -141,7 +141,6 @@ artix-mate-presets
 
 light-locker
 lightdm-gtk-greeter
-pluma
 connman-gtk
 midori
 hexchat
