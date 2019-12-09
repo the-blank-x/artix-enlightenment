@@ -1,0 +1,9 @@
+#!/bin/sh
+
+neofetch >| /etc/issue
+
+# Enable kernel's Magic SysRq
+sysctl -q kernel.sysrq=1 &
+
+# Remove possible stale lockfile
+rm -f /var/lib/pacman/db.lck &

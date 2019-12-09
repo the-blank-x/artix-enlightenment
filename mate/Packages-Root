@@ -115,7 +115,6 @@ ttf-droid
 ttf-roboto
 ttf-roboto-mono
 ttf-inconsolata
-#ttf-indic-otf
 ttf-liberation
 
 xdg-user-dirs
@@ -138,6 +137,7 @@ xf86-video-vmware
 xf86-video-voodoo
 
 artix-mate-presets
+artix-grub-theme
 
 light-locker
 lightdm-gtk-greeter
