@@ -139,19 +139,9 @@ xf86-video-voodoo
 artix-mate-presets
 artix-grub-theme
 
-# MATE
-caja
-marco
-mate-control-center
-mate-calc
-mate-desktop
-mate-icon-theme
-mate-menus
-mate-notification-daemon
-mate-panel
-mate-polkit
-mate-session-manager
-mate-settings-daemon
+# MATE main
+mate
+# MATE extra
 atril
 caja-image-converter
 caja-open-terminal
@@ -171,9 +161,8 @@ mate-system-monitor
 mate-terminal
 mate-utils
 mozo
-leafpad
 
-
+# Basic usability apps
 light-locker
 lightdm-gtk-greeter
 connman-gtk
@@ -181,3 +170,4 @@ midori
 hexchat
 mpv
 neofetch
+leafpad
