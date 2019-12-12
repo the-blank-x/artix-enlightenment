@@ -21,7 +21,9 @@ artix-docs
 @runit connman-runit
 @runit ntp-runit
 @runit bluez-runit
+@runit blocaled
 
+@s6 blocaled
 @s6 connman-s6
 @s6 ntp-s6
 @s6 bluez-s6

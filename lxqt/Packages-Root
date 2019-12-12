@@ -100,6 +100,8 @@ inxi
 @runit connman-runit
 @runit ntp-runit
 @runit sddm-runit
+@runit blocaled
+@s6 blocaled
 @s6 alsa-utils-s6
 @s6 avahi-s6
 @s6 bluez-s6
