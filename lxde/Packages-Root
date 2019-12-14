@@ -138,6 +138,8 @@ xf86-video-voodoo
 
 artix-lxde-presets
 
+artix-sddm-theme
+artix-dark-theme
 xcursor-premium
 
 # LXDE
@@ -153,3 +155,4 @@ hexchat
 mpv
 neofetch
 leafpad
+gvfs-mtp
