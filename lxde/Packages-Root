@@ -140,9 +140,12 @@ xf86-video-voodoo
 
 artix-lxde-presets
 
-artix-sddm-theme
 artix-dark-theme
 xcursor-premium
+artix-backgrounds
+artix-icons
+artix-sddm-theme
+artix-grub-theme
 
 # LXDE
 lxde

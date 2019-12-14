@@ -140,16 +140,21 @@ xf86-video-voodoo
 
 artix-lxqt-presets
 
-artix-sddm-theme
 artix-dark-theme
 xcursor-premium
+artix-backgrounds
+artix-icons
+artix-sddm-theme
+artix-grub-theme
 
 # LXQt
 lxqt
 
 # Basic usability apps
 
-gvfs
+screengrab
+cmst
+qpdfview
 kwrite
 falkon
 xarchiver
