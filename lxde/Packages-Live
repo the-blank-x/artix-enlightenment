@@ -6,8 +6,6 @@ nbd
 @runit artix-live-runit
 @s6 artix-live-s6
 
-artix-grub-theme
-
 calamares-branding
 gparted
 
