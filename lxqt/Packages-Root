@@ -114,8 +114,9 @@ libmongoc
 
 terminus-font
 ttf-droid
+ttf-roboto
+ttf-roboto-mono
 ttf-inconsolata
-ttf-indic-otf
 ttf-liberation
 
 xdg-user-dirs
@@ -137,15 +138,27 @@ xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
 
-
-artix-sddm-theme
 artix-lxqt-presets
+
+artix-dark-theme
+xcursor-premium
+artix-backgrounds
+artix-icons
+artix-sddm-theme
 artix-grub-theme
 
-gvfs
+# LXQt
+lxqt
+
+# Basic usability apps
+
+screengrab
+cmst
+qpdfview
 kwrite
 falkon
 xarchiver
-vlc
+mpv
 breeze-icons
 neofetch
+gvfs-mtp
