@@ -1,6 +1,1 @@
-#!/bin/sh
-
-neofetch >| /etc/issue 
-
-# Remove possible stale lockfile
-rm -f /var/lib/pacman/db.lck &
+../../../common/openrc/etc/rc.local
