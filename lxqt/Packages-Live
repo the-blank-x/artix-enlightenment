@@ -6,7 +6,7 @@ nbd
 @runit artix-live-runit
 @s6 artix-live-s6
 
-artix-grub-theme
+artix-grub-live
 
 calamares-branding
 partitionmanager

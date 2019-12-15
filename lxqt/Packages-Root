@@ -140,6 +140,7 @@ xf86-video-voodoo
 
 artix-sddm-theme
 artix-lxqt-presets
+artix-grub-theme
 
 gvfs
 kwrite
