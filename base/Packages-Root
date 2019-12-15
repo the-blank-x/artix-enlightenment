@@ -45,7 +45,7 @@ ntfs-3g
 @openrc rsync-openrc
 @openrc openssh-openrc
 @openrc wpa_supplicant-openrc
-@openrc syslog-ng-openrc
+@openrc metalog-openrc
 @runit acpid-runit
 @runit cronie-runit
 @runit cryptsetup-runit
@@ -57,7 +57,7 @@ ntfs-3g
 @runit rsync-runit
 @runit openssh-runit
 @runit wpa_supplicant-runit
-@runit syslog-ng-runit
+@runit metalog-runit
 @s6 acpid-s6
 @s6 cronie-s6
 @s6 cryptsetup-s6
@@ -69,7 +69,7 @@ ntfs-3g
 @s6 rsync-s6
 @s6 openssh-s6
 @s6 wpa_supplicant-s6
-@s6 syslog-ng-s6
+@s6 metalog-s6
 os-prober
 reiserfsprogs
 s-nail
