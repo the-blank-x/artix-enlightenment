@@ -1,6 +1,3 @@
-# Artix bash customization
-# Most by nous, a couple kanged from the internets
-
 # are we an interactive shell?
 if [ "$PS1" ]; then
     shopt -s cdspell checkwinsize histappend no_empty_cmd_completion dotglob
