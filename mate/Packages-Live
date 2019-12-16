@@ -9,6 +9,8 @@ nbd
 calamares-branding
 gparted
 
+artix-grub-live
+
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
 #open-vm-tools

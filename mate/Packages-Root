@@ -137,15 +137,29 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
+# Core ISO packages end here
 
-artix-mate-presets
-
+# Branding
+artix-grub-theme
+artix-dark-theme
 xcursor-premium
 
+# Basic usability apps
+atril
+light-locker
+lightdm-gtk-greeter
+connman-gtk
+midori
+hexchat
+mpv
+neofetch
+leafpad
+gvfs-mtp
+
 # MATE main
+artix-mate-presets
 mate
 # MATE extra
-atril
 caja-image-converter
 caja-open-terminal
 caja-sendto
@@ -164,13 +178,3 @@ mate-system-monitor
 mate-terminal
 mate-utils
 mozo
-
-# Basic usability apps
-light-locker
-lightdm-gtk-greeter
-connman-gtk
-midori
-hexchat
-mpv
-neofetch
-leafpad

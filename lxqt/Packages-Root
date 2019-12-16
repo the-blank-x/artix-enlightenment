@@ -137,21 +137,15 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
+# Core ISO packages end here
 
-artix-lxqt-presets
-
+# Branding
+artix-grub-theme
 artix-dark-theme
 xcursor-premium
-artix-backgrounds
-artix-icons
 artix-sddm-theme
-artix-grub-theme
-
-# LXQt
-lxqt
 
 # Basic usability apps
-
 screengrab
 cmst
 qpdfview
@@ -162,3 +156,8 @@ mpv
 breeze-icons
 neofetch
 gvfs-mtp
+
+# LXQt
+artix-lxqt-presets
+lxqt
+

@@ -17,3 +17,5 @@ broadcom-wl
 intel-ucode
 amd-ucode
 artix-docs
+
+artix-grub-live
