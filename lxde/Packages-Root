@@ -156,6 +156,20 @@ neofetch
 gvfs-mtp
 
 # LXDE
-lxde
 artix-lxde-presets
-
+gpicview
+lxappearance
+lxappearance-obconf
+lxde-common
+lxde-icon-theme
+lxhotkey
+lxinput
+lxlauncher
+lxmusic
+lxpanel
+lxrandr
+lxsession
+lxtask
+lxterminal
+openbox
+pcmanfm
