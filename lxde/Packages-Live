@@ -9,6 +9,9 @@ nbd
 calamares-branding
 gparted
 
+artix-grub-live
+artix-grub-theme
+
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
 #open-vm-tools
@@ -17,5 +20,4 @@ broadcom-wl
 intel-ucode
 amd-ucode
 artix-docs
-
-artix-grub-live
+hexchat

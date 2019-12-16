@@ -137,18 +137,12 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
+# Core ISO packages end here
 
-artix-lxde-presets
-
+# Branding
+artix-grub-theme
 artix-dark-theme
 xcursor-premium
-artix-backgrounds
-artix-icons
-artix-sddm-theme
-artix-grub-theme
-
-# LXDE
-lxde
 
 # Basic usability apps
 atril
@@ -156,8 +150,12 @@ light-locker
 lightdm-gtk-greeter
 connman-gtk
 midori
-hexchat
+leafpad
 mpv
 neofetch
-leafpad
 gvfs-mtp
+
+# LXDE
+lxde
+artix-lxde-presets
+

@@ -150,13 +150,12 @@ light-locker
 lightdm-gtk-greeter
 connman-gtk
 midori
-hexchat
+leafpad
 mpv
 neofetch
-leafpad
 gvfs-mtp
 
-# MATE main
+# MATE
 artix-mate-presets
 mate
 # MATE extra

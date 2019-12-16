@@ -10,6 +10,7 @@ calamares-branding
 partitionmanager
 
 artix-grub-live
+artix-grub-theme
 
 virtualbox-guest-modules-artix
 virtualbox-guest-utils

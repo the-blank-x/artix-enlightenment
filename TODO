@@ -1,0 +1,7 @@
+TO-DO LIST
+
+= Symlinks in profiles are dereferenced, move 80-net-link-something.rules into package
+= Move some stuff out of the profiles into packages
+  |_ Desktop settings -> artix-$DE-presets
+  |_ Application settings -> app-presets
+  

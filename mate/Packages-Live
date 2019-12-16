@@ -10,6 +10,7 @@ calamares-branding
 gparted
 
 artix-grub-live
+artix-grub-theme
 
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
@@ -19,3 +20,4 @@ broadcom-wl
 intel-ucode
 amd-ucode
 artix-docs
+hexchat
