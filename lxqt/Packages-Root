@@ -160,4 +160,5 @@ gvfs-mtp
 # LXQt
 artix-lxqt-presets
 lxqt
-
+# For dark theme
+kvantum-qt5
