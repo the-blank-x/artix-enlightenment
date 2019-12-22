@@ -156,7 +156,7 @@ neofetch
 gvfs-mtp
 
 # MATE
-artix-mate-presets
+artix-gtk-presets
 mate
 # MATE extra
 caja-image-converter

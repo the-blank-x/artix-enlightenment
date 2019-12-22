@@ -158,7 +158,7 @@ neofetch
 gvfs-mtp
 
 # LXQt
-artix-lxqt-presets
+artix-qt-presets
 lxqt
 # For dark theme
-kvantum-qt5
+# qt5-styleplugins <-- pulled in by lxqt-presets
