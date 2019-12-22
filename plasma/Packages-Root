@@ -148,7 +148,7 @@ artix-sddm-theme
 # Basic usability apps
 screengrab
 cmst
-qpdfview
+#qpdfview
 kwrite
 falkon
 xarchiver
@@ -157,8 +157,57 @@ mpv
 neofetch
 gvfs-mtp
 
-# LXQt
+# KDE Plasma
 artix-qt-presets
-lxqt
-# For dark theme
-# qt5-styleplugins <-- pulled in by lxqt-presets
+kwin
+plasma-integration
+bluedevil
+breeze
+breeze-gtk
+drkonqi
+kactivitymanagerd
+kde-cli-tools
+kde-gtk-config
+kdecoration
+kdeplasma-addons
+kgamma5
+khotkeys
+kinfocenter
+kmenuedit
+knetattach
+kscreen
+kscreenlocker
+ksshaskpass
+ksysguard
+kwallet-pam
+kwayland-integration
+kwin
+kwrited
+libkscreen
+libksysguard
+milou
+plasma-browser-integration
+plasma-desktop
+plasma-integration
+plasma-pa
+#plasma-thunderbolt
+plasma-vault
+plasma-workspace
+polkit-kde-agent
+powerdevil
+sddm-kcm
+systemsettings
+user-manager
+ 
+ 
+# base apps, first is group name, but we don't pick all pkgs of the group
+dolphin
+kate
+kdialog
+keditbookmarks
+kfind
+konsole
+ 
+gwenview # image viewer
+okular # pdf viewer
+spectacle
