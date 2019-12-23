@@ -16,7 +16,6 @@ ecryptfs-utils
 exfat-utils
 f2fs-tools
 grub
-htop
 inetutils
 iptables
 ipw2100-fw
@@ -149,7 +148,6 @@ artix-sddm-theme
 # Basic usability apps
 screengrab
 cmst
-#qpdfview
 kwrite
 falkon
 xarchiver
@@ -160,8 +158,6 @@ gvfs-mtp
 
 # KDE Plasma
 artix-qt-presets
-kwin
-plasma-integration
 bluedevil
 breeze
 breeze-gtk
@@ -170,7 +166,6 @@ kactivitymanagerd
 kde-cli-tools
 kde-gtk-config
 kdecoration
-kdeplasma-addons
 kgamma5
 khotkeys
 kinfocenter
@@ -186,29 +181,25 @@ kwin
 kwrited
 libkscreen
 libksysguard
-milou
 plasma-browser-integration
 plasma-desktop
 plasma-integration
-plasma-pa
-#plasma-thunderbolt
-plasma-vault
 plasma-workspace
 polkit-kde-agent
 powerdevil
 sddm-kcm
 systemsettings
 user-manager
- 
- 
-# base apps, first is group name, but we don't pick all pkgs of the group
+
 dolphin
 kate
 kdialog
 keditbookmarks
 kfind
+khelpcenter
 konsole
- 
-gwenview # image viewer
-okular # pdf viewer
+kwalletmanager
+okular
+gwenview
+ark
 spectacle
