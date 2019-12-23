@@ -1,13 +1,29 @@
-[H[2J
-Artix Live ISO (\l) - \s-\r \m
+[?25l[?7l[0m[36m[1m                   '
+                  'o'
+                 'ooo'
+                'ooxoo'
+               'ooxxxoo'
+              'oookkxxoo'
+             'oiioxkkxxoo'
+            ':;:iiiioxxxoo'
+               `'.;::ioxxoo'
+          '-.      `':;jiooo'
+         'oooio-..     `'i:io'
+        'ooooxxxxoio:,.   `'-;'
+       'ooooxxxxxkkxoooIi:-.  `'
+      'ooooxxxxxkkkkxoiiiiiji'
+     'ooooxxxxxkxxoiiii:'`     .i'
+    'ooooxxxxxoi:::'`       .;ioxo'
+   'ooooxooi::'`         .:iiixkxxo'
+  'ooooi:'`                `'';ioxxo'
+ 'i:'`                          '':io'
+'`                                   `'[0m
 
+[?25h[?7hArtix Live ISO (\l) - \s-\r \m
 
-
-# Welcome to Artix #
-
+         # Welcome to Artix #
 
 login for the live environment:
     user     'artix'
     password 'artix'
-
 
