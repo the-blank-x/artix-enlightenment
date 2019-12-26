@@ -102,3 +102,6 @@ nbd
 
 intel-ucode
 amd-ucode
+
+artix-grub-live
+artix-grub-theme
