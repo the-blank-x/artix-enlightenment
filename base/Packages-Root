@@ -31,6 +31,7 @@ man-db
 man-pages
 memtest86+
 mkinitcpio
+mkinitcpio-openswap
 nano
 net-tools
 ntfs-3g
