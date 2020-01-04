@@ -146,14 +146,13 @@ xcursor-premium
 artix-branding-base
 
 # Basic usability apps
-atril
-light-locker
 lightdm-gtk-greeter
+light-locker
+atril
 connman-gtk
 midori
 leafpad
 mpv
-neofetch
 gvfs-mtp
 
 # MATE
