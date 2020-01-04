@@ -147,36 +147,30 @@ xcursor-premium
 artix-branding-base
 
 # Basic usability apps
-blueberry
-baobab
-evince
-file-roller
-firefox
-thunderbird
-gnome-calculator
-gnome-disk-utility
-gnome-keyring
-gnome-music
-gnome-online-accounts
-gnome-photos
-gnome-screenshot
-gnome-system-log
-gnome-system-monitor
-gnome-terminal
-hexchat
+gvfs-mtp
+leafpad
 lightdm-gtk-greeter
 light-locker
-nemo-fileroller
-nemo-preview
-nemo-seahorse
-nemo-share
-neofetch
-pamac-classic
-system-config-printer
-xapps
-xcursor-vanilla-dmz
-xed
+midori
+mpv
 xreader
 
 # Cinnamon
 cinnamon
+# Cinnamon extra
+blueberry
+eog
+file-roller
+gnome-calculator
+gnome-disk-utility
+gnome-keyring
+gnome-online-accounts
+gnome-screenshot
+gnome-system-log
+gnome-system-monitor
+gnome-terminal
+nemo-fileroller
+nemo-preview
+nemo-seahorse
+nemo-share
+xcursor-vanilla-dmz
