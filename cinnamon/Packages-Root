@@ -140,7 +140,7 @@ xf86-video-voodoo
 # Core ISO packages end here
 
 # Branding
-artix-cinnamon-presets
+artix-gtk-presets
 artix-grub-theme
 artix-dark-theme
 xcursor-premium
