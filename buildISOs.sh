@@ -33,7 +33,7 @@ usage() {
     exit 1
 }
 
-timestamp() { $(date +"%Y/%m/%d-%H:%M:%S"; }
+timestamp() { date +"%Y/%m/%d-%H:%M:%S"; }
 
 [[ $# -eq 0 ]] && usage
 
