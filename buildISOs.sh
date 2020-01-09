@@ -71,9 +71,7 @@ echo "		branch		${BOLD}${_branch}${ALL_OFF}"
 echo "		profiles 	${GREEN}${profiles[@]}${ALL_OFF}"
 echo "		inits		${CYAN}${inits[@]}${ALL_OFF}"
 
-exit 1
 mkdir -p ${PROFILES}
-#rm -fr ${PROFILES}
 
 cd $WORKSPACE
 if [[ -d $PROFILES ]]; then
