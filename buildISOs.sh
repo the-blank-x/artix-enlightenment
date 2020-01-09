@@ -50,15 +50,9 @@ while getopts "b:p:i:" option; do
         p)
             _profile=$OPTARG
             for p in ${all_profiles[@]}; do
-				[[ ${_profile} =~ $p ]]     && profiles+=($p)
+				[[ ${_profile} =~ $p ]] && profiles+=($p)
 			done
-#            [[ ${_profile} =~ base ]]     && profiles+=('base')
-#            [[ ${_profile} =~ lxde ]]     && profiles+=('lxde')
-#            [[ ${_profile} =~ lxqt ]]     && profiles+=('lxqt')
-#            [[ ${_profile} =~ mate ]]     && profiles+=('mate')
-#            [[ ${_profile} =~ cinnamon ]] && profiles+=('cinnamon')
-#            [[ ${_profile} =~ plasma ]]   && profiles+=('plasma')
-            [[ ${_profile} == all ]]      && profiles=(${all_profiles[@]})
+            [[ ${_profile} == all ]]    && profiles=(${all_profiles[@]})
             ;;
         i)
             _init=$OPTARG
