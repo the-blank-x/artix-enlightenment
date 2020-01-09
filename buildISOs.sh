@@ -9,6 +9,7 @@ colorize
 WORKSPACE=/home/$USER/artools-workspace
 PROFILES=${WORKSPACE}/iso-profiles
 REPO=/srv/iso/testing-iso
+CWD=`pwd`
 
 cd $PROFILES
 all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git" | sort))
@@ -29,13 +30,10 @@ usage() {
     echo "Example: $0 -p base,lxqt,lxde -i openrc,runit"
     echo "         $0 -b gremlins -p base -i s6"
     echo
-    echo "Inexistent values to options are silently ignored."
-    echo
     exit 1
 }
 
-shopt -s extglob
-shopt -s nocasematch
+timestamp() { $(date +"%Y/%m/%d-%H:%M:%S"; }
 
 [[ $# -eq 0 ]] && usage
 
@@ -86,11 +84,15 @@ else
 fi
 
 cd $PROFILES && git checkout refactor
-
+echo "#################################" >>$CWD/ISO_build.log
 for profile in ${profiles[@]}; do
     for init in ${inits[@]}; do
         [[ $init == 'openrc' ]] && cp ${WORKSPACE}/rc.conf ${PROFILES}/$profile/root-overlay/etc/
+        stamp=$(timestamp)
+        echo "$stamp == Begin building    ${_branch} $profile ISO with $init" >> $CWD/ISO_build.log
         nice -n 20 buildiso${branch} -p $profile -i $init
+        stamp=$(timestamp)
+        [[ $? ]] && echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log || echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log
         rm -f ${PROFILES}/$profile/root-overlay/etc/rc.conf
         mv -v ${WORKSPACE}/iso/$profile/artix-$profile-$init-*.iso ${REPO}/
         cd $REPO && sha256sum artix-*.iso > ${REPO}/sha256sums &
