@@ -57,9 +57,9 @@ while getopts "b:p:i:" option; do
         i)
             _init=$OPTARG
             [[ ${_init} =~ (openrc|runit|s6) ]] || { echo; echo "${RED}No valid branch selected!${ALL_OFF}"; echo; usage; }
-            [[ ${_init} =~ openrc ]] && inits+=('openrc')
-            [[ ${_init} =~ runit ]]  && inits+=('runit')
-            [[ ${_init} =~ s6 ]]     && inits+=('s6')
+            for i in ${all_inits[@]}; do
+				[[ ${_init} =~ $i ]] && inits+=($i)
+			done
             [[ ${_init} == all ]]    && inits=(${all_inits[@]})
             ;;
     esac
