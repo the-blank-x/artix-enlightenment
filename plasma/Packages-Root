@@ -148,12 +148,12 @@ artix-sddm-theme
 # Basic usability apps
 screengrab
 cmst
+okular
 kwrite
 falkon
 xarchiver
 breeze-icons
 mpv
-neofetch
 gvfs-mtp
 
 # KDE Plasma
@@ -199,7 +199,6 @@ kfind
 khelpcenter
 konsole
 kwalletmanager
-okular
 gwenview
 ark
 spectacle
