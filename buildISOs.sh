@@ -18,7 +18,7 @@ all_inits=('openrc' 'runit' 's6')
 usage() {
     echo
     echo -n "${BOLD}Usage:  "
-    echo "$0 [-b stable|gremlins] -p <profile>[,profile][,profile] -i <init>[,init][,init]${ALL_OFF}"
+    echo "$0 [-b stable|gremlins] -p <profile>[,profile,...]|[all] -i <init>[,init,...]|[all]${ALL_OFF}"
     echo
     echo -n "All profiles, all inits:  "
     echo "$0 -p all -i all"
@@ -54,7 +54,6 @@ while getopts "b:p:i:" option; do
             ;;
         i)
             _init=$OPTARG
-            [[ ${_init} =~ (openrc|runit|s6) ]] || { echo; echo "${RED}No valid branch selected!${ALL_OFF}"; echo; usage; }
             for i in ${all_inits[@]}; do
 				[[ ${_init} =~ $i ]] && inits+=($i)
 			done
@@ -62,6 +61,7 @@ while getopts "b:p:i:" option; do
             ;;
     esac
 done
+
 [[ $branch ]] || { _branch='stable'; branch=''; }
 [[ ${#profiles[@]} -eq 0 ]] && { echo; echo "${RED}No valid profiles selected!${ALL_OFF}"; echo; usage; }
 [[ ${#inits[@]} -eq 0 ]]	&& { echo; echo "${RED}No valid inits selected!"${ALL_OFF}; echo; usage; }
