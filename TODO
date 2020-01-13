@@ -5,4 +5,4 @@ DONE = Symlinks in profiles are dereferenced, move 80-net-link-something.rules i
 DONE  |_ Desktop settings -> artix-$DE-presets
 PENDING  |_ Application settings -> app-presets
 
-/etc/rc.local from artix-branding-base overwrites /etc/issue with artix:artix info
+DONE /etc/rc.local from artix-branding-base overwrites /etc/issue with artix:artix info
