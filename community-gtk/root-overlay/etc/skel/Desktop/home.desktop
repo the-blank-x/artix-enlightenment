@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Link
+Name=Home
+Icon=user-home
+URL=/usr/share/applications/pcmanfm.desktop
+NotShowIn=LXQt;KDE;MATE;GNOME
+OnlyShowIn=LXDE;

@@ -1,0 +1,22 @@
+mkinitcpio-nfs-utils
+squashfs-tools
+nbd
+
+@openrc artix-live-openrc
+@runit artix-live-runit
+artix-live-portable-efi
+
+calamares-branding
+gparted
+gptfdisk
+#orca
+
+virtualbox-guest-modules-artix
+virtualbox-guest-utils
+#open-vm-tools
+broadcom-wl
+
+intel-ucode
+amd-ucode
+artix-docs
+artix-grub-theme

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Exec=pcmanfm-qt /home/artix
+Icon=user-home
+Name=artix
+OnlyShowIn=LXQt

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Icon=user-trash
+Name=trash
+Type=Link
+URL=trash:/
+NotShowIn=MATE;LXDE;GNOME;XFCE;LXQt
+OnlyShowIn=KDE;

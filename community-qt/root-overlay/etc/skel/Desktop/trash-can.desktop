@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Exec=pcmanfm-qt trash:///
+Icon=user-trash-full
+Name=Trash
+OnlyShowIn=LXQt

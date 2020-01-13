@@ -1,0 +1,1 @@
+../../../community/root-overlay/etc/mkinitcpio.conf.mod

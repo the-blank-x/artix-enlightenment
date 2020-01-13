@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=dolphin
+Icon=user-home
+Name=Home
+NotShowIn=LXQt;MATE;LXDE;GNOME
+OnlyShowIn=KDE;
