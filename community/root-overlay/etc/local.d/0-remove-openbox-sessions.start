@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -f /usr/share/xsessions/openbox*
+rm -f /etc/local.d/0-remove-openbox-sessions.start &

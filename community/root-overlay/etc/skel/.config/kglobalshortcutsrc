@@ -1,0 +1,12 @@
+[ActivityManager]
+_k_friendly_name=Activity Manager
+switch-to-activity-78b09966-59e0-4506-ad9a-140cae783f24=none,none,Switch to activity "Default"
+
+[ksmserver]
+Lock Session=Ctrl+Alt+L\tScreensaver,none,Lock Session
+_k_friendly_name=System Settings
+
+[plasmashell]
+_k_friendly_name=Activity switching
+next activity=Meta+Tab,none,Walk through activities
+previous activity=Meta+Shift+Tab,none,Walk through activities (Reverse)

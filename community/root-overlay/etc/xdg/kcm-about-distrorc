@@ -1,0 +1,5 @@
+[General]
+LogoPath=/usr/share/icons/artix/logo.svg
+Website=https://artixlinux.org
+Version=x86_64
+Variant=Rolling Release / KDE Plasma

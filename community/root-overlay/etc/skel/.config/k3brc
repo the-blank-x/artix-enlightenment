@@ -1,0 +1,36 @@
+[External Programs]
+search path[$e]=/usr/bin/,/usr/local/bin/,/usr/sbin/,/usr/local/sbin/,/sbin
+
+[General Options]
+Allow overburning=false
+Fifo buffer=4
+Force unsafe operations=false
+Last system check version=19.4.1
+Manual buffer size=false
+Navigator breadcrumb mode=true
+No cd eject=false
+Show Document Header=true
+Show advanced GUI=false
+Show progress OSD=false
+Show splash=true
+action dialog startup settings=2
+ask_for_saving_changes_on_exit=true
+auto rewritable erasing=false
+burnfree=true
+check system config=true
+config version=19.4.1
+current theme=K3b Dark
+hide main window while writing=false
+keep action dialogs open=false
+
+[file view]
+Decoration position=0
+Show Inline Previews=true
+Show Preview=false
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+View Style=DetailTree
+detailedViewIconSize=0
+show bookmarks=false

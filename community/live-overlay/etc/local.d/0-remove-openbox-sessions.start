@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Openbox is not configured in community ISOs and users can't login as is
+
+rm -f /usr/share/xsessions/openbox*
+rm -f /etc/local.d/0-remove-openbox-sessions.start &

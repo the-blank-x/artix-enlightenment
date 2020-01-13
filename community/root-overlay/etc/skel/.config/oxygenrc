@@ -1,0 +1,7 @@
+[ActiveShadow]
+InnerColor=41,89,94
+OuterColor=39,78,112
+ShadowSize=32
+
+[InactiveShadow]
+ShadowSize=32

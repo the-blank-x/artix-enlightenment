@@ -1,0 +1,9 @@
+input:not([type=button]):not([type=checkbox]):not([type=radio]):not([type=submit]), textarea, select {
+  background-color: #313131 !important;
+  color: #dadada !important;
+  -moz-appearance: none !important;
+}
+
+#downloads-indicator-counter {
+    color: #a0a0a0;
+}

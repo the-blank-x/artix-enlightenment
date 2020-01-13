@@ -1,0 +1,8 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Greeter]
+Theme=artix.dark
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/backgrounds/Artix_dna_spiral_dark.jpg

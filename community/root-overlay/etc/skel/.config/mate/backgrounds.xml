@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "mate-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Cosmos</name>
+    <filename>/usr/share/backgrounds/cosmos/background-1.xml</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(88,145,188)</pcolor>
+    <scolor>rgb(60,143,37)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>space1080p.jpg</name>
+    <filename>/usr/share/backgrounds/space1080p.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(88,145,188)</pcolor>
+    <scolor>rgb(60,143,37)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>GradientGlowBlue.jpg</name>
+    <filename>/usr/share/backgrounds/GradientGlowBlue.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(88,145,188)</pcolor>
+    <scolor>rgb(60,143,37)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>No Desktop Background</name>
+    <filename>(none)</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(39,88,126)</pcolor>
+    <scolor>rgb(98,127,90)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>TwoTone1080p.jpg</name>
+    <filename>/usr/share/backgrounds/TwoTone1080p.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(88,145,188)</pcolor>
+    <scolor>rgb(60,143,37)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Artix_dna_spiral_dark.jpg</name>
+    <filename>/usr/share/backgrounds/Artix_dna_spiral_dark.jpg</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>rgb(88,145,188)</pcolor>
+    <scolor>rgb(60,143,37)</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+</wallpapers>
