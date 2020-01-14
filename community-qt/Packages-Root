@@ -1,9 +1,10 @@
+base
+@openrc elogind-openrc
+@runit elogind-runit
+@s6 elogind-s6
 acpi
 b43-fwcutter
-bash
 btrfs-progs
-bzip2
-coreutils
 crda
 dhclient
 diffutils
@@ -14,33 +15,22 @@ e2fsprogs
 ecryptfs-utils
 exfat-utils
 f2fs-tools
-file
-filesystem
-findutils
-gawk
-gcc-libs
-gettext
-glibc
-grep
 grub
-gzip
 htop
 inetutils
-iproute2
 iptables
-iputils
 ipw2100-fw
 ipw2200-fw
 jfsutils
 linux
-less
-licenses
+linux-headers
 linux-firmware
 logrotate
 lsb-release
 man-db
 man-pages
 memtest86+
+mkinitcpio
 mkinitcpio-openswap
 nano
 net-tools
@@ -69,60 +59,149 @@ ntfs-3g
 @runit openssh-runit
 @runit wpa_supplicant-runit
 @runit syslog-ng-runit
-artix-sysvcompat
+@s6 acpid-s6
+@s6 cronie-s6
+@s6 cryptsetup-s6
+@s6 dhcpcd-s6
+@s6 haveged-s6
+@s6 lvm2-s6
+@s6 mdadm-s6
+@s6 nfs-utils-s6
+@s6 rsync-s6
+@s6 openssh-s6
+@s6 wpa_supplicant-s6
+@s6 syslog-ng-s6
 os-prober
-pacman
-pciutils
-perl
-procps-ng
-psmisc
 reiserfsprogs
-sed
-shadow
 s-nail
 sudo
 sysfsutils
-tar
 texinfo
 usbutils
-util-linux
 which
 efibootmgr
 xfsprogs
 zsh
 
-# System
-@openrc connman-openrc
-@runit connman-runit
-
-#modemmanager
-#nss-mdns
+alsa-firmware
+powertop
+inxi
 
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
+@openrc connman-openrc
 @openrc displaymanager-openrc
-#@openrc json-c
+@openrc ntp-openrc
 @openrc openrc-settingsd
 @openrc bluez-openrc
-@openrc ntp-openrc
-@openrc openvpn-openrc
-@openrc tor-openrc
-@openrc syncthing-openrc
-@openrc cups-openrc
-@openrc hdparm-openrc
-
 @runit alsa-utils-runit
 @runit avahi-runit
-@runit sddm-runit
-#@runit json-c
-@runit connman-runit
 @runit bluez-runit
+@runit connman-runit
 @runit ntp-runit
-@runit openvpn-runit
-@runit tor-runit
-@runit syncthing-runit
-@runit cups-runit
-@runit hdparm-runit
+@runit lightdm-runit
+@runit blocaled
+@s6 blocaled
+@s6 alsa-utils-s6
+@s6 avahi-s6
+@s6 bluez-s6
+@s6 connman-s6
+@s6 ntp-s6
+@s6 lightdm-s6
+
+librabbitmq-c
+libmongoc
+
+terminus-font
+ttf-droid
+ttf-roboto
+ttf-roboto-mono
+ttf-inconsolata
+ttf-liberation
+
+xdg-user-dirs
+xdg-utils
+
+xorg-server
+xorg-xinit
+xorg-xhost
+
+xf86-input-vmmouse
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-sisusb
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo
+# Core ISO packages end here
+
+# Branding
+artix-grub-theme
+artix-dark-theme
+artix-branding-base
+artix-gtk-presets
+xcursor-premium
+
+# Community goodies
+base-devel
+xorg-xwininfo
+xorg-xprop
+subversion
+git
+cvs
+wireless_tools
+nftables
+pacman-contrib
+hddtemp
+
+# That hated other
+wine-gecko
+wine
+winetricks
+
+# Applications and helpers
+veracrypt
+firefox
+libreoffice-fresh
+mpv
+youtube-dl
+ffmpegthumbnailer
+ffmpegthumbs
+pulseaudio-alsa
+p7zip
+unrar
+fortune-mod
+links
+redshift
+libunrar
+torsocks
+pulseaudio-bluetooth
+frei0r-plugins
+movit
+lib32-mesa-vdpau
+libva-mesa-driver
+libva-vdpau-driver
+libva-intel-driver
+gst-plugins-good
+gst-plugins-bad
+gst-libav
+mesa-demos
+opencl-mesa
+ocl-icd
+chafa
+tigervnc
+strace
+ltrace
+lsof
+# pacman frontend
+octopi
+
+breeze-icons
 
 # KDE Plasma
 bluedevil
@@ -142,7 +221,6 @@ user-manager
 sddm-kcm
 powerdevil
 xdg-desktop-portal-kde
-
 dolphin
 kfind
 keditbookmarks
@@ -156,7 +234,6 @@ kaccounts-providers
 krdc
 zeroconf-ioslave
 telepathy-kde
-kopete
 kmail
 kaddressbook
 kontact
@@ -164,10 +241,23 @@ kalarm
 knotes
 krfb
 ktorrent
+akregator
+kdeconnect
+krdc
+bluedevil
+qt5-connectivity
 
 # kdegraphics
+digikam
+krita
+showphoto
 kamera
-#kdegraphics-thumbnailers
+kdegraphics-thumbnailers
+okular
+spectacle
+sweeper
+kuickshow
+skanlite
 
 # kdeutils
 kdesu
@@ -184,11 +274,6 @@ kleopatra
 kompare
 ktimer
 kcalc
-
-# kdegraphics
-okular
-spectacle
-sweeper
 
 # kdemultimedia
 juk
@@ -221,17 +306,8 @@ neofetch
 yaourtix
 hunspell-en_US
 
-# artix stuff
-artix-icons
-artix-backgrounds
-artix-grub-theme
-artix-grub-theme-common
-artix-sddm-theme
-artix-dark-theme
 
-lsb-release
-
-compton
+picom
 # KIO is still lacking
 gvfs
 gvfs-mtp
@@ -244,130 +320,3 @@ virtualbox-guest-utils
 mc
 screen
 
-librabbitmq-c
-libmongoc
-
-mesa-vdpau
-
-terminus-font
-ttf-inconsolata
-ttf-liberation
-ttf-fira-code
-ttf-fira-sans
-ttf-fira-mono
-ttf-droid
-ttf-roboto
-xdg-user-dirs
-xdg-utils
-
-xorg-server
-xorg-xinit
-xterm
-xorg-xhost
-
-xf86-input-vmmouse
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-dummy
-xf86-video-fbdev
-xf86-video-intel
-xf86-video-nouveau
-xf86-video-openchrome
-xf86-video-sisusb
-xf86-video-vesa
-xf86-video-vmware
-xf86-video-voodoo
-
-xorg-xwininfo
-xorg-xprop
-
-# rest of base-devel
-autoconf
-automake
-binutils
-bison
-fakeroot
-flex
-gcc
-m4
-make
-patch
-pkgconf
-subversion
-git
-cvs
-
-wireless_tools
-nftables
-pacman-contrib
-hddtemp
-
-mpv
-youtube-dl
-ffmpegthumbnailer
-pulseaudio-alsa
-p7zip
-unrar
-fortune-mod
-links
-powertop
-inxi
-plasma5-applets-redshift-control
-
-libunrar
-veracrypt
-torsocks
-openconnect
-pulseaudio-bluetooth
-firefox
-libreoffice-fresh
-#winetricks
-#wine-mono
-#wine_gecko
-frei0r-plugins
-movit
-opencv
-#lib32-mesa-vdpau
-libva-mesa-driver
-gst-plugins-good
-gst-plugins-bad
-gst-libav
-libva-vdpau-driver
-libva-intel-driver
-mesa-demos
-opencl-mesa
-ocl-icd
-chafa
-tigervnc
-breeze-icons
-strace
-ltrace
-lsof
-
-# GTK pkgs
-geany-plugins
-syncthing-gtk
-handbrake
-audacity
-gimp
-inkscape
-gufw
-meld
-
-# pacman frontend
-octopi
-
-# Uniform QT/GTK look
-kvantum-qt5
-qt5-styleplugins
-qt5ct
-breeze-gtk
-kde-gtk-config
-vertex-themes
-lxde-icon-theme
-oxygen
-xcursor-premium
-
-# Off-repos
-#gotop
-#tor-browser

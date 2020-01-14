@@ -1,9 +1,10 @@
+base
+@openrc elogind-openrc
+@runit elogind-runit
+@s6 elogind-s6
 acpi
 b43-fwcutter
-bash
 btrfs-progs
-bzip2
-coreutils
 crda
 dhclient
 diffutils
@@ -14,34 +15,22 @@ e2fsprogs
 ecryptfs-utils
 exfat-utils
 f2fs-tools
-file
-filesystem
-findutils
-gawk
-gcc-libs
-gettext
-glibc
-grep
 grub
-gzip
 htop
 inetutils
-iproute2
 iptables
-iputils
 ipw2100-fw
 ipw2200-fw
 jfsutils
-less
 linux
 linux-headers
-licenses
 linux-firmware
 logrotate
 lsb-release
 man-db
 man-pages
 memtest86+
+mkinitcpio
 mkinitcpio-openswap
 nano
 net-tools
@@ -70,174 +59,71 @@ ntfs-3g
 @runit openssh-runit
 @runit wpa_supplicant-runit
 @runit syslog-ng-runit
-artix-sysvcompat
+@s6 acpid-s6
+@s6 cronie-s6
+@s6 cryptsetup-s6
+@s6 dhcpcd-s6
+@s6 haveged-s6
+@s6 lvm2-s6
+@s6 mdadm-s6
+@s6 nfs-utils-s6
+@s6 rsync-s6
+@s6 openssh-s6
+@s6 wpa_supplicant-s6
+@s6 syslog-ng-s6
 os-prober
-pacman
-pciutils
-perl
-procps-ng
-psmisc
 reiserfsprogs
-sed
-shadow
 s-nail
 sudo
 sysfsutils
-tar
 texinfo
 usbutils
-util-linux
 which
 efibootmgr
 xfsprogs
 zsh
 
-# System
-@openrc connman-openrc
-@runit connman-runit
-
-#modemmanager
-#nss-mdns
+alsa-firmware
+powertop
+inxi
 
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
+@openrc connman-openrc
 @openrc displaymanager-openrc
-#@openrc json-c
+@openrc ntp-openrc
 @openrc openrc-settingsd
 @openrc bluez-openrc
-@openrc ntp-openrc
-@openrc openvpn-openrc
-@openrc tor-openrc
-@openrc syncthing-openrc
-@openrc cups-openrc
-@openrc hdparm-openrc
-
 @runit alsa-utils-runit
 @runit avahi-runit
-@runit sddm-runit
-#@runit json-c
-@runit connman-runit
 @runit bluez-runit
+@runit connman-runit
 @runit ntp-runit
-@runit openvpn-runit
-@runit tor-runit
-@runit syncthing-runit
-@runit cups-runit
-@runit hdparm-runit
-
-# MATE
-caja
-marco
-mate-control-center
-mate-desktop
-mate-icon-theme
-mate-menus
-mate-notification-daemon
-mate-panel
-mate-polkit
-mate-session-manager
-mate-settings-daemon
-mate-themes
-atril
-caja-image-converter
-caja-open-terminal
-caja-sendto
-caja-share
-caja-wallpaper
-caja-xattr-tags
-engrampa
-eom
-mate-applets
-mate-calc
-mate-icon-theme-faenza
-mate-media
-mate-netbook
-mate-power-manager
-mate-screensaver
-mate-sensors-applet
-mate-system-monitor
-mate-terminal
-mate-user-share
-mate-utils
-mate-applet-dock
-mozo
-
-# LXDE
-gpicview
-lxappearance
-lxappearance-obconf
-lxde-common
-lxhotkey
-lxinput
-lxlauncher
-lxmusic
-lxpanel
-lxrandr
-lxsession
-lxtask
-lxterminal
-openbox
-obconf
-pcmanfm
-lxde-icon-theme
-
-# Misc
-smb4k
-xscreensaver
-
-# lightdm
-light-locker
-lightdm-gtk-greeter
-
-# Network management
-connman-gtk
-
-# other stuff
-accountsservice
-raw-thumbnailer
-bluez-utils
-alsa-firmware
-neofetch
-yaourtix
-hunspell-en_US
-
-# artix stuff
-artix-dark-theme
-
-lsb-release
-
-compton
-# KIO is still lacking
-gvfs
-gvfs-mtp
-gvfs-smb
-gvfs-afc
-gvfs-google
-gvfs-gphoto2
-
-virtualbox-guest-utils
-mc
-screen
+@runit lightdm-runit
+@runit blocaled
+@s6 blocaled
+@s6 alsa-utils-s6
+@s6 avahi-s6
+@s6 bluez-s6
+@s6 connman-s6
+@s6 ntp-s6
+@s6 lightdm-s6
 
 librabbitmq-c
 libmongoc
 
-mesa-vdpau
-
 terminus-font
-ttf-inconsolata
-ttf-liberation
-ttf-fira-code
-ttf-fira-sans
-ttf-fira-mono
 ttf-droid
 ttf-roboto
+ttf-roboto-mono
+ttf-inconsolata
+ttf-liberation
+
 xdg-user-dirs
 xdg-utils
 
 xorg-server
 xorg-xinit
-xterm
 xorg-xhost
 
 xf86-input-vmmouse
@@ -252,74 +138,115 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
+# Core ISO packages end here
 
+# Branding
+artix-grub-theme
+artix-dark-theme
+artix-branding-base
+artix-gtk-presets
+xcursor-premium
+
+# Community goodies
+base-devel
 xorg-xwininfo
 xorg-xprop
-
-# rest of base-devel
-autoconf
-automake
-binutils
-bison
-fakeroot
-flex
-gcc
-m4
-make
-patch
-pkgconf
 subversion
 git
 cvs
-
 wireless_tools
 nftables
 pacman-contrib
 hddtemp
 
+# That hated other
+wine-gecko
+wine
+winetricks
+
+
+# MATE
+mate
+# MATE extra
+caja-image-converter
+caja-open-terminal
+caja-sendto
+caja-wallpaper
+caja-xattr-tags
+engrampa
+eom
+mate-applets
+mate-icon-theme-faenza
+mate-media
+mate-netbook
+mate-power-manager
+mate-screensaver
+mate-sensors-applet
+mate-system-monitor
+mate-terminal
+mate-utils
+mozo
+
+# LXDE
+gpicview
+lxappearance
+lxappearance-obconf
+lxde-common
+lxde-icon-theme
+lxhotkey
+lxinput
+lxlauncher
+lxmusic
+lxpanel
+lxrandr
+lxsession
+lxtask
+lxterminal
+openbox
+pcmanfm
+
+# Applications and helpers
+veracrypt
+firefox
+libreoffice-fresh
 mpv
 youtube-dl
 ffmpegthumbnailer
+ffmpegthumbs
 pulseaudio-alsa
 p7zip
 unrar
 fortune-mod
 links
-powertop
-inxi
 redshift
-
 libunrar
-veracrypt
 torsocks
-openconnect
 pulseaudio-bluetooth
-firefox
-libreoffice-fresh
-#winetricks
-#wine-mono
-#wine_gecko
 frei0r-plugins
 movit
-opencv
-#lib32-mesa-vdpau
+lib32-mesa-vdpau
 libva-mesa-driver
+libva-vdpau-driver
+libva-intel-driver
 gst-plugins-good
 gst-plugins-bad
 gst-libav
-libva-vdpau-driver
-libva-intel-driver
 mesa-demos
 opencl-mesa
 ocl-icd
 chafa
 tigervnc
-breeze-icons
 strace
 ltrace
 lsof
+# pacman frontend
+pamac
 
+breeze-icons
 # GTK pkgs
+lightdm-gtk-greeter
+light-locker
+atril
 geany-plugins
 syncthing-gtk
 handbrake
@@ -329,14 +256,21 @@ inkscape
 brasero
 openshot
 pluma
-sylpheed
+thunderbird
+claws-mail
 lollypop
 hexchat
+connman-gtk
 midori
 leafpad
+gvfs-mtp
 gtk-engines
 gufw
 meld
+
+# Qt pkgs
+kdenlive
+
 
 # pacman frontend
 pamac
@@ -348,9 +282,7 @@ qt5ct
 breeze-gtk
 #kde-gtk-config # pulls plasma-workspace
 vertex-themes
-lxde-icon-theme
 oxygen
-xcursor-premium
 
 # Off-repos
 #gotop

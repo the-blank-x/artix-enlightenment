@@ -142,8 +142,9 @@ xf86-video-voodoo
 # Branding
 artix-grub-theme
 artix-dark-theme
-xcursor-premium
 artix-branding-base
+artix-gtk-presets
+xcursor-premium
 
 # Basic usability apps
 lightdm-gtk-greeter
@@ -156,7 +157,6 @@ mpv
 gvfs-mtp
 
 # MATE
-artix-gtk-presets
 mate
 # MATE extra
 caja-image-converter

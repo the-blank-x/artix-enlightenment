@@ -91,8 +91,8 @@ for profile in ${profiles[@]}; do
         nice -n 20 buildiso${branch} -p $profile -i $init
         res=$?
         stamp=$(timestamp)
-        [[ $res ]] &&	echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log || \
-						echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log
+        [[ $res == 0 ]]	&& { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log; } \
+                        || { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log; continue; }
         rm -f ${PROFILES}/$profile/root-overlay/etc/rc.conf
         mv -v ${WORKSPACE}/iso/$profile/artix-$profile-$init-*.iso ${REPO}/
         cd $REPO && sha256sum artix-*.iso > ${REPO}/sha256sums &
