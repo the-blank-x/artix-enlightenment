@@ -36,7 +36,7 @@ dummy=prevent-empty-group
 Color Background=26,26,26
 Color Highlighted Line=33,33,33
 Color Icon Bar=35,35,35
-Font=Fira Mono,11,-1,5,50,0,0,0,0,0,Regular
+Font=Roboto Mono,11,-1,5,50,0,0,0,0,0,Regular
 dummy=prevent-empty-group
 
 [Normal]

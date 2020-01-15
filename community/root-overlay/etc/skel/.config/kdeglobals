@@ -108,12 +108,12 @@ Name=Artix-dark
 XftAntialias=true
 XftHintStyle=hintfull
 XftSubPixel=rgb
-fixed=Fira Mono,11,-1,5,50,0,0,0,0,0,Regular
-font=Fira Sans,11,-1,5,50,0,0,0,0,0,Regular
-menuFont=Fira Sans,11,-1,5,50,0,0,0,0,0,Regular
+fixed=Roboto Mono,11,-1,5,50,0,0,0,0,0,Regular
+font=Roboto,11,-1,5,50,0,0,0,0,0,Regular
+menuFont=Roboto,11,-1,5,50,0,0,0,0,0,Regular
 shadeSortColumn=true
-smallestReadableFont=Fira Sans,11,-1,5,50,0,0,0,0,0,Regular
-toolBarFont=Fira Sans,11,-1,5,50,0,0,0,0,0,Regular
+smallestReadableFont=Roboto,11,-1,5,50,0,0,0,0,0,Regular
+toolBarFont=Roboto,11,-1,5,50,0,0,0,0,0,Regular
 widgetStyle=gtk2
 
 [Icons]
@@ -135,7 +135,7 @@ TransparentMoving=false
 [WM]
 activeBackground=45,45,45
 activeBlend=45,45,45
-activeFont=Fira Sans,11,-1,5,50,0,0,0,0,0,Regular
+activeFont=Roboto,11,-1,5,50,0,0,0,0,0,Regular
 activeForeground=255,255,255
 inactiveBackground=53,53,53
 inactiveBlend=53,53,53

@@ -2,7 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=false
 ColorScheme=Linux
-Font=Fira Mono,11,-1,5,50,0,0,0,0,0,Regular
+Font=Roboto Mono,11,-1,5,50,0,0,0,0,0,Regular
 
 [General]
 Name=Profile 1

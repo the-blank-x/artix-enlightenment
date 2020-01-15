@@ -8,10 +8,10 @@ CloseButtons=true
 CustomTabFont=true
 CustomTextFont=true
 IrcColorCode1=90,90,90
-ListFont=Fira Mono,10,-1,5,50,0,0,0,0,0,Regular
+ListFont=Roboto Mono,10,-1,5,50,0,0,0,0,0,Regular
 NickColor8=0,122,4
-TabFont=Fira Sans,10,-1,5,50,0,0,0,0,0,Regular
-TextFont=Fira Mono,10,-1,5,50,0,0,0,0,0,Regular
+TabFont=Roboto,10,-1,5,50,0,0,0,0,0,Regular
+TextFont=Roboto Mono,10,-1,5,50,0,0,0,0,0,Regular
 TopicSplitterSizes=28,535
 TreeSplitterSizes=145,773
 
