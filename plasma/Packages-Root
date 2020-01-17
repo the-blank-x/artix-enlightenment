@@ -88,7 +88,7 @@ inxi
 
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
-@openrc connman-openrc
+@openrc networkmanager-openrc
 @openrc displaymanager-openrc
 @openrc ntp-openrc
 @openrc openrc-settingsd
@@ -96,7 +96,7 @@ inxi
 @runit alsa-utils-runit
 @runit avahi-runit
 @runit bluez-runit
-@runit connman-runit
+@runit networkmanager-runit
 @runit ntp-runit
 @runit sddm-runit
 @runit blocaled
@@ -104,7 +104,7 @@ inxi
 @s6 alsa-utils-s6
 @s6 avahi-s6
 @s6 bluez-s6
-@s6 connman-s6
+@s6 networkmanager-s6
 @s6 ntp-s6
 @s6 sddm-s6
 
@@ -147,7 +147,6 @@ artix-sddm-theme
 
 # Basic usability apps
 screengrab
-cmst
 okular
 kwrite
 falkon
@@ -155,6 +154,7 @@ xarchiver
 breeze-icons
 mpv
 gvfs-mtp
+plasma-nm
 
 # KDE Plasma
 artix-qt-presets

@@ -524,7 +524,6 @@ top_panel_size=69
 
 
 [Dirs]
-other_dir=/home/nouskas/.local/share/akonadi
 current_is_left=1
 
 [New Left Panel]
