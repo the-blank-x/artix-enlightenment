@@ -1,6 +1,1 @@
-#!/bin/bash
-
-# machine-id can uniquely identify your machine, change it at every boot
-
-dbus-uuidgen  >| /var/lib/dbus/machine-id &
-dbus-uuidgen  >| /etc/machine-id &
+../../../live-overlay/etc/local.d/change-machine-id.start

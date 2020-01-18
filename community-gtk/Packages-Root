@@ -164,7 +164,6 @@ wine-gecko
 wine
 winetricks
 
-
 # MATE
 mate
 # MATE extra
@@ -243,37 +242,45 @@ lsof
 pamac
 
 breeze-icons
+
+# Network management
+connman-gtk
+
 # GTK pkgs
-lightdm-gtk-greeter
-light-locker
-atril
 geany-plugins
 syncthing-gtk
 handbrake
 audacity
 gimp
 inkscape
-brasero
 openshot
+hexchat
+gufw
+meld
+lightdm-gtk-greeter
+light-locker
+atril
+brasero
 pluma
 thunderbird
 claws-mail
 lollypop
-hexchat
-connman-gtk
 midori
 leafpad
-gvfs-mtp
+
+# other stuff
 gtk-engines
-gufw
-meld
+accountsservice
+raw-thumbnailer
+bluez-utils
+yaourtix
+hunspell-en_US
+picom
 
 # Qt pkgs
 kdenlive
-
-
-# pacman frontend
-pamac
+digikam
+smb4k
 
 # Uniform QT/GTK look
 kvantum-qt5
@@ -284,6 +291,14 @@ breeze-gtk
 vertex-themes
 oxygen
 
-# Off-repos
-#gotop
-#tor-browser
+gvfs-mtp
+gvfs-smb
+gvfs-afc
+gvfs-google
+gvfs-gphoto2
+
+virtualbox-guest-utils
+mc
+screen
+tmux
+

@@ -89,7 +89,7 @@ inxi
 
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
-@openrc connman-openrc
+@openrc networkmanager-openrc
 @openrc displaymanager-openrc
 @openrc ntp-openrc
 @openrc openrc-settingsd
@@ -97,7 +97,7 @@ inxi
 @runit alsa-utils-runit
 @runit avahi-runit
 @runit bluez-runit
-@runit connman-runit
+@runit networkmanager-runit
 @runit ntp-runit
 @runit lightdm-runit
 @runit blocaled
@@ -105,7 +105,7 @@ inxi
 @s6 alsa-utils-s6
 @s6 avahi-s6
 @s6 bluez-s6
-@s6 connman-s6
+@s6 networkmanager-s6
 @s6 ntp-s6
 @s6 lightdm-s6
 
@@ -163,45 +163,6 @@ hddtemp
 wine-gecko
 wine
 winetricks
-
-# Applications and helpers
-veracrypt
-firefox
-libreoffice-fresh
-mpv
-youtube-dl
-ffmpegthumbnailer
-ffmpegthumbs
-pulseaudio-alsa
-p7zip
-unrar
-fortune-mod
-links
-redshift
-libunrar
-torsocks
-pulseaudio-bluetooth
-frei0r-plugins
-movit
-lib32-mesa-vdpau
-libva-mesa-driver
-libva-vdpau-driver
-libva-intel-driver
-gst-plugins-good
-gst-plugins-bad
-gst-libav
-mesa-demos
-opencl-mesa
-ocl-icd
-chafa
-tigervnc
-strace
-ltrace
-lsof
-# pacman frontend
-octopi
-
-breeze-icons
 
 # KDE Plasma
 bluedevil
@@ -294,22 +255,79 @@ smb4k
 lxqt
 xscreensaver
 
+# Applications and helpers
+veracrypt
+firefox
+libreoffice-fresh
+mpv
+youtube-dl
+ffmpegthumbnailer
+ffmpegthumbs
+pulseaudio-alsa
+p7zip
+unrar
+fortune-mod
+links
+redshift
+libunrar
+torsocks
+pulseaudio-bluetooth
+frei0r-plugins
+movit
+lib32-mesa-vdpau
+libva-mesa-driver
+libva-vdpau-driver
+libva-intel-driver
+gst-plugins-good
+gst-plugins-bad
+gst-libav
+mesa-demos
+opencl-mesa
+ocl-icd
+chafa
+tigervnc
+strace
+ltrace
+lsof
+# pacman frontend
+octopi
+
+breeze-icons
+
 # Network management
-cmst
+plasma-nm
+
+# GTK pkgs
+geany-plugins
+syncthing-gtk
+handbrake
+audacity
+gimp
+inkscape
+openshot
+hexchat
+gufw
+meld
 
 # other stuff
+gtk-engines
 accountsservice
 raw-thumbnailer
 bluez-utils
-alsa-firmware
-neofetch
 yaourtix
 hunspell-en_US
-
-
 picom
+
+# Uniform QT/GTK look
+kvantum-qt5
+qt5-styleplugins
+qt5ct
+breeze-gtk
+#kde-gtk-config # pulls plasma-workspace
+vertex-themes
+oxygen
+
 # KIO is still lacking
-gvfs
 gvfs-mtp
 gvfs-smb
 gvfs-afc
@@ -319,4 +337,5 @@ gvfs-gphoto2
 virtualbox-guest-utils
 mc
 screen
+tmux
 
