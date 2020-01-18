@@ -16,7 +16,6 @@ ecryptfs-utils
 exfat-utils
 f2fs-tools
 grub
-htop
 inetutils
 iptables
 ipw2100-fw
@@ -144,17 +143,8 @@ artix-grub-theme
 artix-dark-theme
 artix-branding-base
 artix-gtk-presets
+artix-qt-presets
 xcursor-premium
-
-# Basic usability apps
-lightdm-gtk-greeter
-light-locker
-atril
-connman-gtk
-midori
-leafpad
-mpv
-gvfs-mtp
 
 # MATE
 mate
@@ -177,3 +167,13 @@ mate-system-monitor
 mate-terminal
 mate-utils
 mozo
+
+# Basic usability apps
+lightdm-gtk-greeter
+light-locker
+atril
+connman-gtk
+midori
+leafpad
+mpv
+gvfs-mtp

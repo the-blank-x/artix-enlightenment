@@ -141,23 +141,22 @@ xf86-video-voodoo
 # Branding
 artix-grub-theme
 artix-dark-theme
-xcursor-premium
 artix-branding-base
+artix-gtk-presets
+artix-qt-presets
 artix-sddm-theme
+xcursor-premium
+
+# LXQt
+lxqt
 
 # Basic usability apps
 screengrab
-cmst
-qpdfview
 kwrite
 falkon
 xarchiver
 breeze-icons
 mpv
 gvfs-mtp
-
-# LXQt
-artix-qt-presets
-lxqt
-# For dark theme
-# qt5-styleplugins <-- pulled in by lxqt-presets
+qpdfview
+cmst

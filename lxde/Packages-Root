@@ -16,7 +16,6 @@ ecryptfs-utils
 exfat-utils
 f2fs-tools
 grub
-htop
 inetutils
 iptables
 ipw2100-fw
@@ -142,21 +141,12 @@ xf86-video-voodoo
 # Branding
 artix-grub-theme
 artix-dark-theme
-xcursor-premium
 artix-branding-base
-
-# Basic usability apps
-lightdm-gtk-greeter
-light-locker
-atril
-connman-gtk
-midori
-leafpad
-mpv
-gvfs-mtp
+artix-gtk-presets
+artix-qt-presets
+xcursor-premium
 
 # LXDE
-artix-gtk-presets
 gpicview
 lxappearance
 lxappearance-obconf
@@ -173,3 +163,13 @@ lxtask
 lxterminal
 openbox
 pcmanfm
+
+# Basic usability apps
+lightdm-gtk-greeter
+light-locker
+atril
+connman-gtk
+midori
+leafpad
+mpv
+gvfs-mtp

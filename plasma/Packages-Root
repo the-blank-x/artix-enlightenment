@@ -141,20 +141,11 @@ xf86-video-voodoo
 # Branding
 artix-grub-theme
 artix-dark-theme
-xcursor-premium
 artix-branding-base
+artix-gtk-presets
+artix-qt-presets
 artix-sddm-theme
-
-# Basic usability apps
-screengrab
-okular
-kwrite
-falkon
-xarchiver
-breeze-icons
-mpv
-gvfs-mtp
-plasma-nm
+xcursor-premium
 
 # KDE Plasma
 artix-qt-presets
@@ -190,7 +181,6 @@ powerdevil
 sddm-kcm
 systemsettings
 user-manager
-
 dolphin
 kate
 kdialog
@@ -202,3 +192,14 @@ kwalletmanager
 gwenview
 ark
 spectacle
+
+# Basic usability apps
+screengrab
+kwrite
+falkon
+xarchiver
+breeze-icons
+mpv
+gvfs-mtp
+okular
+plasma-nm
