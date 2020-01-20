@@ -12,7 +12,7 @@ REPO=/srv/iso/testing-iso
 CWD=`pwd`
 
 cd $PROFILES
-all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git" | sort))
+all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|community$" | sort))
 all_inits=('openrc' 'runit' 's6')
 
 usage() {
