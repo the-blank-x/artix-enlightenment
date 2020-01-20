@@ -1,5 +1,6 @@
 #!/bin/sh
 
+[ -x /etc/local.d/0-dna_spiral.start ] && /etc/local.d/0-dna_spiral.start &
 neofetch >| /etc/issue 
 
 # Remove possible stale lockfile
