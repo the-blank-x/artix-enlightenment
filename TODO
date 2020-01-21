@@ -1,8 +1,11 @@
-TO-DO LIST
+TO-{DO,FIX} LIST
 
 DONE = Symlinks in profiles are dereferenced, move 80-net-link-something.rules into package
 = Move some stuff out of the profiles into packages
 DONE  |_ Desktop settings -> artix-$DE-presets
-PENDING  |_ Application settings -> app-presets
+DONE  |_ Application settings -> app-presets
 
-DONE /etc/rc.local from artix-branding-base overwrites /etc/issue with artix:artix info
+FIXED /etc/rc.local from artix-branding-base overwrites /etc/issue with artix:artix info
+
+Change prompt from $ to % in community profiles
+Openbox not deleted from xsessions
