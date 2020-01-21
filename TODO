@@ -8,5 +8,6 @@ DONE  |_ Application settings -> app-presets
 FIXED /etc/rc.local from artix-branding-base overwrites /etc/issue with artix:artix info
 
 Change prompt from $ to % in community profiles
-Openbox not deleted from xsessions
+Openbox not deleted from xsessions <-- see next
 Make rc.local execute stuff in /etc/local.d under runit/s6
+mimeapps.list must be separate for each profile
