@@ -99,7 +99,7 @@ inxi
 @runit bluez-runit
 @runit networkmanager-runit
 @runit ntp-runit
-@runit lightdm-runit
+@runit sddm-runit
 @runit blocaled
 @s6 blocaled
 @s6 alsa-utils-s6
@@ -107,7 +107,7 @@ inxi
 @s6 bluez-s6
 @s6 networkmanager-s6
 @s6 ntp-s6
-@s6 lightdm-s6
+@s6 sddm-s6
 
 librabbitmq-c
 libmongoc
@@ -165,90 +165,22 @@ wine
 winetricks
 
 # KDE Plasma
-bluedevil
-kdeplasma-addons
-kinfocenter
-ksysguard
-kscreen
-ksshaskpass
-oxygen
-plasma-browser-integration
-plasma-desktop
-plasma-pa
-plasma-vault
-kwallet-pam
-kgamma5
-user-manager
-sddm-kcm
-powerdevil
-xdg-desktop-portal-kde
-dolphin
-kfind
-keditbookmarks
-konqueror
-konsole
-kate
-kwrite
-
-# kdenetwork
-kaccounts-providers
-krdc
-zeroconf-ioslave
-telepathy-kde
-kmail
-kaddressbook
-kontact
-kalarm
-knotes
-krfb
-ktorrent
-akregator
-kdeconnect
-krdc
-bluedevil
-qt5-connectivity
-
-# kdegraphics
-digikam
-krita
-kamera
-kdegraphics-thumbnailers
-okular
-spectacle
-sweeper
-kuickshow
-skanlite
-
-# kdeutils
-kdesu
-karchive
-dolphin-plugins
-filelight
-kamoso
-kcolorchooser
-kcron
-kdf
-kget
-kgpg
-kleopatra
-kompare
-ktimer
-kcalc
-
-# kdemultimedia
-juk
-kdenlive
-k3b
-clementine
-kipi-plugins
-digikam
+plasma
+kf5
+kdebase
+kdeutils
+kde-applications
+kdenetwork
+kdepim
+kdegraphics
+kdeutils
+kdemultimedia
 
 # Misc
-ark
-gwenview
 konversation
 falkon
 smb4k
+kdenlive
 
 # LXQT
 lxqt
@@ -337,4 +269,3 @@ virtualbox-guest-utils
 mc
 screen
 tmux
-
