@@ -4,4 +4,5 @@ cd /root/.config
 for setting in gtk-3.0 gtkrc gtkrc-2.0 kdeglobals qt5ct; do
     ln -s /etc/skel/.config/${setting} 2>/dev/null &
 done
-rm -f /etc/local.d/theme-root.start
+
+rm -f $0

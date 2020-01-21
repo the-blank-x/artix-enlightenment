@@ -37,4 +37,4 @@ for icon in $(find -not -path "*scalable*" -iname start-here-symbolic.symbolic.p
 done
 
 # Comment out the chmod line below to run at every boot and catch new icons or updates
-chmod -x /etc/local.d/artix-icons.start
+chmod -x $0

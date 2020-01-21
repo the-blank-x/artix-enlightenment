@@ -11,4 +11,4 @@ if [ ! -e /crypto_keyfile.bin ]; then
 fi
 
 # Run once and disappear
-rm -f /etc/local.d/mkinitcpio.start
+rm -f $0
