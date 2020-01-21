@@ -9,3 +9,4 @@ FIXED /etc/rc.local from artix-branding-base overwrites /etc/issue with artix:ar
 
 Change prompt from $ to % in community profiles
 Openbox not deleted from xsessions
+Make rc.local execute stuff in /etc/local.d under runit/s6
