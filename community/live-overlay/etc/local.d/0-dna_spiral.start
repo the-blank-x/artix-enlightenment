@@ -7,6 +7,7 @@ sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
     /etc/skel/.config/pcmanfm-qt/lxqt/settings.conf \
     /etc/skel/.config/pcmanfm-qt/default/settings.conf \
     /etc/skel/.config/kscreenlockerrc \
-    /etc/skel/.config/plasmarc &
+    /etc/skel/.config/plasmarc 2>/dev/null &
 rm -f /etc/local.d/0-dna_spiral.start
-sed -i /dna_spiral/d /etc/rc.local
+sed -i /dna_spiral/d /etc/rc.local 2>/dev/null
+
