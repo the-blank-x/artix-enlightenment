@@ -1,0 +1,12 @@
+#!/bin/sh
+
+sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
+    /etc/dconf/db/mate.d/theme \
+    /usr/share/glib-2.0/schemas/99_cinnamon.gschema.override \
+    /etc/skel/.config/pcmanfm/LXDE/desktop-items-0.conf \
+    /etc/skel/.config/pcmanfm-qt/lxqt/settings.conf \
+    /etc/skel/.config/pcmanfm-qt/default/settings.conf \
+    /etc/skel/.config/kscreenlockerrc \
+    /etc/skel/.config/plasmarc 2>/dev/null &
+
+rm -f $0
