@@ -39,8 +39,3 @@ application/vnd.oasis.opendocument.spreadsheet=libreoffice-calc.desktop
 application/vnd.ms-excel=libreoffice-calc.desktop
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop
 application/xhtml+xml=firefox.desktop
-
-[Added Associations]
-x-content/audio-player=clementine.desktop;
-application/xhtml+xml=firefox.desktop;
-inode/directory=pcmanfm.desktop;
