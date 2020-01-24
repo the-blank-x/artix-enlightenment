@@ -9,6 +9,6 @@ sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
     /etc/skel/.config/kscreenlockerrc \
     /etc/skel/.config/plasmarc 2>/dev/null
 
-dconf update&
+dconf update &
 
 rm -f $0
