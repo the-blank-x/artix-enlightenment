@@ -144,7 +144,7 @@ xf86-video-voodoo
 artix-grub-theme
 artix-dark-theme
 artix-branding-base
-artix-gtk-presets
+artix-community-presets
 xcursor-premium
 
 # Community goodies
@@ -287,10 +287,10 @@ kvantum-qt5
 qt5-styleplugins
 qt5ct
 breeze-gtk
-#kde-gtk-config # pulls plasma-workspace
 vertex-themes
 oxygen
 
+# KIO is still lacking
 gvfs-mtp
 gvfs-smb
 gvfs-afc
