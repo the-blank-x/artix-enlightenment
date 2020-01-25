@@ -1,9 +1,12 @@
 #!/bin/sh
 
+neofetch >| /etc/issue 
+# Give login info in live environment
+live='/etc/issue.live'
+[[ -f $live ]] && { cat $live >> /etc/issue; sed -i '/live/d' /etc/rc.local; }
+rm -f $live &
 # /etc/local.d script execution in runit/s6
 [ -x /etc/local.d/0-process_local.d.start ] && /etc/local.d/0-process_local.d.start &
-
-neofetch >| /etc/issue 
 
 # Remove possible stale lockfile
 rm -f /var/lib/pacman/db.lck &

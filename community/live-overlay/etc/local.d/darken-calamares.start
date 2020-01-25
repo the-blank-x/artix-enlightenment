@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sed -i 's/pkexec //' /usr/share/applications/calamares.desktop &
+rm -f $0 &
