@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Use the DNA helix in community ISOs
 sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
     /etc/dconf/db/mate.d/theme \
     /usr/share/glib-2.0/schemas/99_cinnamon.gschema.override \
@@ -10,5 +11,13 @@ sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
     /etc/skel/.config/plasmarc 2>/dev/null
 
 dconf update &
+
+# Also in live
+sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
+    /home/artix/.config/pcmanfm/LXDE/desktop-items-0.conf \
+    /home/artix/.config/pcmanfm-qt/lxqt/settings.conf \
+    /home/artix/.config/pcmanfm-qt/default/settings.conf \
+    /home/artix/.config/kscreenlockerrc \
+    /home/artix/.config/plasmarc 2>/dev/null
 
 rm -f $0
