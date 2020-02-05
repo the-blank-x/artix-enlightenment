@@ -227,7 +227,7 @@ octopi
 breeze-icons
 
 # Network management
-plasma-nm
+network-manager-applet
 
 # GTK pkgs
 geany-plugins
