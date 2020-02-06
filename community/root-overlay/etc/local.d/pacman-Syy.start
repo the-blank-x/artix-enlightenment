@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# Run once at boot to initialize repo databases and disappear.
-rm -f /var/lib/pacman/db.lck
-pacman -Syy 2>&1 >/dev/null &
-rm -f $0
