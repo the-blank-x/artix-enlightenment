@@ -13,6 +13,6 @@ Make rc.local execute stuff in /etc/local.d under runit/s6:
     ls -l /sbin/init | sed 's/.*->\ \(.*\)-init/\1/'
 DONE mimeapps.list must be separate for each profile
 
-Networkmanager in LXQt
-GRUB not 1280x1024
+DONE Networkmanager in LXQt
+DONE GRUB not 1280x1024
 Autologin-session doesn't work
