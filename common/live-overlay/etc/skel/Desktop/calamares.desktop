@@ -1,4 +1,5 @@
 #!/usr/bin/env xdg-open
+
 [Desktop Entry]
 Type=Application
 Version=1.0
@@ -8,7 +9,7 @@ Keywords=calamares;system;installer;
 TryExec=calamares
 Exec=pkexec env DISPLAY=:0 XAUTHORITY=/home/artix/.Xauthority QT_QPA_PLATFORMTHEME=gtk2 calamares
 Comment=Calamares — System Installer
-Icon=calamares
+Icon=artixlinux-logo
 Terminal=false
 StartupNotify=true
 Categories=Qt;System;
