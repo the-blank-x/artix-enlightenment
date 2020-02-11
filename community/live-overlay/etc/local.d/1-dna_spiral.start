@@ -13,11 +13,13 @@ sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
 dconf update &
 
 # Also in live
-sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
-    /home/artix/.config/pcmanfm/LXDE/desktop-items-0.conf \
-    /home/artix/.config/pcmanfm-qt/lxqt/settings.conf \
-    /home/artix/.config/pcmanfm-qt/default/settings.conf \
-    /home/artix/.config/kscreenlockerrc \
-    /home/artix/.config/plasmarc 2>/dev/null
+for USER in /home/*; do
+  sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
+    $USER/.config/pcmanfm/LXDE/desktop-items-0.conf \
+    $USER/.config/pcmanfm-qt/lxqt/settings.conf \
+    $USER/.config/pcmanfm-qt/default/settings.conf \
+    $USER/.config/kscreenlockerrc \
+    $USER/.config/plasmarc 2>/dev/null
+done
 
-rm -f $0
+chmod -x $0
