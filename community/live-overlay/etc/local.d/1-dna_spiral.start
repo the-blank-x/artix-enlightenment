@@ -22,4 +22,4 @@ for USER in /home/*; do
     $USER/.config/plasmarc 2>/dev/null
 done
 
-chmod -x $0
+rm -f $0
