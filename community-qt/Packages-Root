@@ -186,6 +186,8 @@ kdenlive
 # LXQT
 lxqt
 xscreensaver
+qpdfview
+trojita
 
 # Applications and helpers
 veracrypt
