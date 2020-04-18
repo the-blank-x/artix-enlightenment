@@ -16,7 +16,6 @@ ecryptfs-utils
 exfat-utils
 f2fs-tools
 grub
-htop
 inetutils
 iptables
 ipw2100-fw
@@ -89,7 +88,7 @@ inxi
 
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
-@openrc networkmanager-openrc
+@openrc connman-openrc
 @openrc displaymanager-openrc
 @openrc ntp-openrc
 @openrc openrc-settingsd
@@ -97,17 +96,17 @@ inxi
 @runit alsa-utils-runit
 @runit avahi-runit
 @runit bluez-runit
-@runit networkmanager-runit
+@runit connman-runit
 @runit ntp-runit
-@runit sddm-runit
+@runit lightdm-runit
 @runit blocaled
 @s6 blocaled
 @s6 alsa-utils-s6
 @s6 avahi-s6
 @s6 bluez-s6
-@s6 networkmanager-s6
+@s6 connman-s6
 @s6 ntp-s6
-@s6 sddm-s6
+@s6 lightdm-s6
 
 librabbitmq-c
 libmongoc
@@ -124,7 +123,6 @@ xdg-utils
 
 xorg-server
 xorg-xinit
-xorg-xhost
 
 xf86-input-vmmouse
 xf86-video-amdgpu
@@ -144,135 +142,22 @@ xf86-video-voodoo
 artix-grub-theme
 artix-dark-theme
 artix-branding-base
-artix-community-presets
+artix-gtk-presets
+artix-qt-presets
 xcursor-premium
-artix-sddm-theme
 
-# Community goodies
-base-devel
-xorg-xwininfo
-xorg-xprop
-subversion
-git
-cvs
-wireless_tools
-nftables
-pacman-contrib
-hddtemp
+# XFCE
+xfce4
+xfce4-goodies
+pulseaudio
+pavucontrol
 
-# That hated other
-wine-gecko
-wine
-winetricks
-
-# KDE Plasma
-plasma
-kf5
-kdebase
-kdeutils
-kde-applications
-kdenetwork
-kdepim
-kdegraphics
-kdeutils
-kdemultimedia
-
-# LXQT
-lxqt
-xscreensaver
-qpdfview
-trojita
-
-# Applications and helpers
-veracrypt
-firefox
-firefox-dark-reader
-firefox-adblock-plus
-firefox-noscript
-firefox-ublock-origin
-libreoffice-fresh
+# Basic usability apps
+lightdm-gtk-greeter
+light-locker
+atril
+connman-gtk
+midori
+leafpad
 mpv
-youtube-dl
-ffmpegthumbnailer
-ffmpegthumbs
-pulseaudio-alsa
-p7zip
-unrar
-fortune-mod
-links
-redshift
-libunrar
-torsocks
-pulseaudio-bluetooth
-frei0r-plugins
-movit
-lib32-mesa-vdpau
-libva-mesa-driver
-libva-vdpau-driver
-libva-intel-driver
-gst-plugins-good
-gst-plugins-bad
-gst-libav
-mesa-demos
-opencl-mesa
-ocl-icd
-chafa
-tigervnc
-strace
-ltrace
-lsof
-# pacman frontend
-octopi
-
-breeze-icons
-
-# Network management
-network-manager-applet
-
-# GTK pkgs
-geany-plugins
-syncthing-gtk
-handbrake
-audacity
-gimp
-inkscape
-openshot
-hexchat
-gufw
-meld
-
-# other stuff
-gtk-engines
-accountsservice
-raw-thumbnailer
-bluez-utils
-yaourtix
-hunspell-en_US
-picom
-
-# Qt pkgs
-konversation
-falkon
-kdenlive
-digikam
-smb4k
-
-# Uniform QT/GTK look
-kvantum-qt5
-qt5-styleplugins
-qt5ct
-breeze-gtk
-vertex-themes
-oxygen
-
-# KIO is still lacking
 gvfs-mtp
-gvfs-smb
-gvfs-afc
-gvfs-google
-gvfs-gphoto2
-
-virtualbox-guest-utils
-mc
-screen
-tmux

@@ -207,6 +207,10 @@ pcmanfm
 # Applications and helpers
 veracrypt
 firefox
+firefox-dark-reader
+firefox-adblock-plus
+firefox-noscript
+firefox-ublock-origin
 libreoffice-fresh
 mpv
 youtube-dl
@@ -245,6 +249,7 @@ breeze-icons
 
 # Network management
 connman-gtk
+modemmanager
 
 # GTK pkgs
 geany-plugins

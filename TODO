@@ -9,10 +9,20 @@ FIXED /etc/rc.local from artix-branding-base overwrites /etc/issue with artix:ar
 
 DONE Change prompt from $ to % in community profiles
 Openbox not deleted from xsessions <-- see next
-Make rc.local execute stuff in /etc/local.d under runit/s6:
-    ls -l /sbin/init | sed 's/.*->\ \(.*\)-init/\1/'
+DONE Make rc.local execute stuff in /etc/local.d under runit/s6:
+     ls -l /sbin/init | sed 's/.*->\ \(.*\)-init/\1/'
 DONE mimeapps.list must be separate for each profile
 
 DONE Networkmanager in LXQt
-DONE GRUB not 1280x1024
+DONE GRUB remove 1280x1024
 Autologin-session doesn't work
+
+2020-03-08
+==========
+
+DONE Use firefox-dark-reader instead of local/skel profile's
+DONE Also consider a few more addons from the group
+TODO Test firefox before releasing
+
+2020-04-18
+DONE XFCE4 profile
