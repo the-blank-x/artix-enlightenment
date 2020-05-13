@@ -89,8 +89,8 @@ inxi
 
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
-@openrc displaymanager-openrc
 @openrc networkmanager-openrc
+@openrc displaymanager-openrc
 @openrc ntp-openrc
 @openrc openrc-settingsd
 @openrc bluez-openrc
@@ -124,6 +124,7 @@ xdg-utils
 
 xorg-server
 xorg-xinit
+xorg-xhost
 
 xf86-input-vmmouse
 xf86-video-amdgpu
@@ -140,20 +141,13 @@ xf86-video-voodoo
 # Core ISO packages end here
 
 # Branding
-artix-gtk-presets
 artix-grub-theme
 artix-dark-theme
-xcursor-premium
 artix-branding-base
-
-# Basic usability apps
-gvfs-mtp
-leafpad
-lightdm-gtk-greeter
-light-locker
-midori
-mpv
-xreader
+artix-gtk-presets
+artix-qt-presets
+xcursor-premium
+artix-sddm-theme
 
 # Cinnamon
 cinnamon
@@ -174,3 +168,16 @@ nemo-preview
 nemo-seahorse
 nemo-share
 xcursor-vanilla-dmz
+
+# Basic usability apps
+leafpad
+midori
+atril
+lightdm-gtk-greeter
+light-locker
+mpv
+ffmpegthumbnailer
+ffmpegthumbs
+raw-thumbnailer
+qt5-imageformats
+gvfs-mtp

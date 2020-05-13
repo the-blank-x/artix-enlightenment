@@ -16,6 +16,7 @@ ecryptfs-utils
 exfat-utils
 f2fs-tools
 grub
+htop
 inetutils
 iptables
 ipw2100-fw
@@ -123,6 +124,7 @@ xdg-utils
 
 xorg-server
 xorg-xinit
+xorg-xhost
 
 xf86-input-vmmouse
 xf86-video-amdgpu
@@ -165,11 +167,15 @@ openbox
 pcmanfm
 
 # Basic usability apps
+connman-gtk
+leafpad
+midori
+atril
 lightdm-gtk-greeter
 light-locker
-atril
-connman-gtk
-midori
-leafpad
 mpv
+ffmpegthumbnailer
+ffmpegthumbs
+raw-thumbnailer
+qt5-imageformats
 gvfs-mtp

@@ -194,7 +194,9 @@ libreoffice-fresh
 mpv
 youtube-dl
 ffmpegthumbnailer
-ffmpegthumbs
+#ffmpegthumbs # included in kdemultimedia
+raw-thumbnailer
+qt5-imageformats
 pulseaudio-alsa
 p7zip
 unrar
@@ -244,7 +246,6 @@ meld
 # other stuff
 gtk-engines
 accountsservice
-raw-thumbnailer
 bluez-utils
 yaourtix
 hunspell-en_US

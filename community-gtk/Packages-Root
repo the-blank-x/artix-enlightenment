@@ -213,9 +213,12 @@ firefox-noscript
 firefox-ublock-origin
 libreoffice-fresh
 mpv
-youtube-dl
 ffmpegthumbnailer
 ffmpegthumbs
+raw-thumbnailer
+qt5-imageformats
+gvfs-mtp
+youtube-dl
 pulseaudio-alsa
 p7zip
 unrar
@@ -277,6 +280,7 @@ leafpad
 gtk-engines
 accountsservice
 raw-thumbnailer
+qt5-imageformats
 bluez-utils
 yaourtix
 hunspell-en_US
@@ -296,7 +300,6 @@ vertex-themes
 oxygen
 
 # KIO is still lacking
-gvfs-mtp
 gvfs-smb
 gvfs-afc
 gvfs-google
