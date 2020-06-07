@@ -81,7 +81,7 @@ else
     git clone https://gitea.artixlinux.org/artix/iso-profiles.git
 fi
 
-cd $PROFILES && git checkout refactor
+cd $PROFILES && git checkout master
 echo "#################################" >>$CWD/ISO_build.log
 for profile in ${profiles[@]}; do
     for init in ${inits[@]}; do
