@@ -29,16 +29,11 @@ DONE XFCE4 profile
 2020-06-08
 Autologin-session selection
 Cinnamon fonts should change to Roboto 11 instead of M$ ones, for consistency
-Remove screengrab from plasma
-Use QTWEBENGINE_CHROMIUM_FLAGS=
-  --blink-settings=darkMode=4,darkModeImagePolicy=1
-  --blink-settings=darkModeEnabled=true,darkModeInversionAlgorithm=4
-  --blink-settings=darkMode=4,darkModeImagePolicy=1
-  --force-dark-mode
-or whatever works with Qt-5.15
+DONE Remove screengrab from plasma
+DONE Use QTWEBENGINE_CHROMIUM_FLAGS=--blink-settings=darkMode=4,darkModeImagePolicy=1/--blink-settings=darkModeEnabled=true,darkModeInversionAlgorithm=4/--force-dark-mode or whatever works with Qt-5.15
 The window title font in XFCE needs to be adjusted
-The Libreoffice background needs to change from 'Automatic' to '#2a2a2a'
+DONE The Libreoffice background needs to change from 'Automatic' to '#2a2a2a'
 Fluid is dark in GTK but light in Qt
 community-qt still boots into LXQt
-The SDDM theme could use some darkening
-Perhaps add man-pages to the ISOs
+DONE The SDDM theme could use some darkening
+DONE Perhaps add man-pages to the ISOs
