@@ -146,7 +146,7 @@ artix-dark-theme
 artix-branding-base
 artix-community-presets
 xcursor-premium
-artix-sddm-theme
+sddm-theme-artix
 
 # Community goodies
 base-devel

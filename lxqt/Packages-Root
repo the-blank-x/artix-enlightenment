@@ -147,7 +147,7 @@ artix-branding-base
 artix-gtk-presets
 artix-qt-presets
 xcursor-premium
-artix-sddm-theme
+sddm-theme-artix
 
 # LXQt
 lxqt
