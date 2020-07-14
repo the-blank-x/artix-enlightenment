@@ -168,14 +168,13 @@ winetricks
 # KDE Plasma
 plasma
 kf5
-kdebase
-kdeutils
+kde-system
 kde-applications
-kdenetwork
+kde-utilities
+kde-network
+kde-graphics
+kde-multimedia
 kdepim
-kdegraphics
-kdeutils
-kdemultimedia
 
 # LXQT
 lxqt
