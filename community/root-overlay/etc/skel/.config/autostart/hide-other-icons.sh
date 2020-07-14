@@ -25,7 +25,7 @@ case $XDG_CURRENT_DESKTOP in
         ;;
   MATE) [[ -f .hidden-mate ]] && ln -sf .hidden-mate .hidden
         ;;
-  LXDE) [[ -f .hidden-lxde ]] && ln -sf .hidden-lxde .hidden
+  LXDE) rm -f org.kde.konversation.desktop
         ;;
   LXQt) [[ -f .hidden-lxqt ]] && ln -sf .hidden-lxqt .hidden
         ;;
