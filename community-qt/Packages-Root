@@ -231,6 +231,7 @@ breeze-icons
 
 # Network management
 network-manager-applet
+modem-manager-gui
 
 # GTK pkgs
 geany-plugins

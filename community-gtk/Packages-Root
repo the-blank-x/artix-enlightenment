@@ -253,6 +253,7 @@ breeze-icons
 
 # Network management
 connman-gtk
+modem-manager-gui
 
 # GTK pkgs
 geany-plugins
