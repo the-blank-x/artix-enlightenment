@@ -86,6 +86,8 @@ zsh
 alsa-firmware
 powertop
 inxi
+modemmanager
+usb_modeswitch
 
 @openrc alsa-utils-openrc
 @openrc avahi-openrc

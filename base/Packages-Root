@@ -81,6 +81,8 @@ which
 efibootmgr
 xfsprogs
 zsh
+modemmanager
+usb_modeswitch
 
 mkinitcpio-nfs-utils
 squashfs-tools

@@ -86,6 +86,8 @@ zsh
 alsa-firmware
 powertop
 inxi
+modemmanager
+usb_modeswitch
 
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
@@ -191,11 +193,11 @@ firefox-noscript
 firefox-ublock-origin
 libreoffice-fresh
 mpv
-youtube-dl
 ffmpegthumbnailer
 #ffmpegthumbs # included in kdemultimedia
 raw-thumbnailer
 qt5-imageformats
+youtube-dl
 pulseaudio-alsa
 p7zip
 unrar
