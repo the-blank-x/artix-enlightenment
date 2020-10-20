@@ -31,9 +31,13 @@ Autologin-session selection
 Cinnamon fonts should change to Roboto 11 instead of M$ ones, for consistency
 DONE Remove screengrab from plasma
 DONE Use QTWEBENGINE_CHROMIUM_FLAGS=--blink-settings=darkMode=4,darkModeImagePolicy=1/--blink-settings=darkModeEnabled=true,darkModeInversionAlgorithm=4/--force-dark-mode or whatever works with Qt-5.15
-The window title font in XFCE needs to be adjusted
+DONE The window title font in XFCE needs to be adjusted
 DONE The Libreoffice background needs to change from 'Automatic' to '#2a2a2a'
-Fluid is dark in GTK but light in Qt
+DONE Fluid is dark in GTK but light in Qt
 community-qt still boots into LXQt
 DONE The SDDM theme could use some darkening
 DONE Perhaps add man-pages to the ISOs
+
+2020-10-15
+Fix libreoffice-7 bright side-pane; perhaps related, /etc/profile.d/libreoffice-fresh.sh: SAL_USE_VCLPLUGIN=gtk3 spurts (soffice:5766): Gtk-WARNING **: Theme parsing error: gtk.css:14:33: Failed to import: Error opening file /home/artix/.config/gtk-3.0/window_decorations.css: No such file or directory
+Plasma is getting fucked-up with QT_* set to gtk; see kinfocenter - the alternative kvantum-dark has ugly widgets
