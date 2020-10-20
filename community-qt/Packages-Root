@@ -279,3 +279,4 @@ virtualbox-guest-utils
 mc
 screen
 tmux
+hdparm

@@ -278,7 +278,6 @@ midori
 leafpad
 
 # other stuff
-raw-thumbnailer
 qt5-imageformats
 gtk-engines
 accountsservice
@@ -311,3 +310,4 @@ virtualbox-guest-utils
 mc
 screen
 tmux
+hdparm
