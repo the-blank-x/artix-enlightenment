@@ -262,7 +262,6 @@ handbrake
 audacity
 gimp
 inkscape
-openshot
 hexchat
 gufw
 meld
@@ -273,7 +272,6 @@ brasero
 pluma
 thunderbird
 claws-mail
-lollypop
 midori
 leafpad
 
@@ -290,6 +288,9 @@ picom
 kdenlive
 digikam
 smb4k
+clementine
+projectm-pulseaudio
+projectm-sdl
 
 # Uniform QT/GTK look
 kvantum-qt5

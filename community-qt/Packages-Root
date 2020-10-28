@@ -171,11 +171,8 @@ winetricks
 plasma
 kf5
 kde-system
-kde-applications
-kde-utilities
 kde-network
-kde-graphics
-kde-multimedia
+kde-utilities
 kdepim
 
 # LXQT
@@ -194,7 +191,7 @@ firefox-ublock-origin
 libreoffice-fresh
 mpv
 ffmpegthumbnailer
-#ffmpegthumbs # included in kdemultimedia
+ffmpegthumbs
 raw-thumbnailer
 qt5-imageformats
 youtube-dl
@@ -240,12 +237,12 @@ handbrake
 audacity
 gimp
 inkscape
-openshot
 hexchat
 gufw
 meld
 
 # other stuff
+qt5-imageformats
 gtk-engines
 accountsservice
 bluez-utils
@@ -254,11 +251,51 @@ hunspell-en_US
 picom
 
 # Qt pkgs
-konversation
-falkon
+# Part of kde-applications
+#kdenlive
+#kamoso
+#kmix
+#k3b
 kdenlive
 digikam
 smb4k
+clementine
+projectm-pulseaudio
+projectm-sdl
+konversation
+falkon
+ark
+dolphin-plugins
+ffmpegthumbs
+filelight
+filelight
+gwenview
+k3b
+kaddressbook
+kamera
+kamoso
+kate
+kcalc
+kcharselect
+kcolorchooser
+kdegraphics-thumbnailers
+kdesdk-thumbnailers
+kdf
+kdialog
+keditbookmarks
+kfind
+kgpg
+konqueror
+konsole
+kruler
+ktimer
+kwalletmanager
+kwrite
+okular
+print-manager
+spectacle
+svgpart
+sweeper
 
 # Uniform QT/GTK look
 kvantum-qt5
