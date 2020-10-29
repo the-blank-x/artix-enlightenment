@@ -251,11 +251,6 @@ hunspell-en_US
 picom
 
 # Qt pkgs
-# Part of kde-applications
-#kdenlive
-#kamoso
-#kmix
-#k3b
 kdenlive
 digikam
 smb4k
@@ -269,33 +264,34 @@ dolphin-plugins
 ffmpegthumbs
 filelight
 filelight
-gwenview
 k3b
 kaddressbook
 kamera
 kamoso
-kate
 kcalc
 kcharselect
 kcolorchooser
+kdf
 kdegraphics-thumbnailers
 kdesdk-thumbnailers
-kdf
+kate
 kdialog
 keditbookmarks
 kfind
 kgpg
+kmix
 konqueror
 konsole
 kruler
 ktimer
 kwalletmanager
 kwrite
-okular
 print-manager
+gwenview
 spectacle
 svgpart
 sweeper
+okular
 
 # Uniform QT/GTK look
 kvantum-qt5

@@ -186,15 +186,25 @@ powerdevil
 sddm-kcm
 systemsettings
 dolphin
+kdegraphics-thumbnailers
+kdesdk-thumbnailers
 kate
 kdialog
 keditbookmarks
 kfind
-khelpcenter
+kgpg
+kmix
+konqueror
 konsole
+kruler
+ktimer
 kwalletmanager
+kwrite
+print-manager
 gwenview
 spectacle
+svgpart
+sweeper
 
 # Basic usability apps
 plasma-nm
