@@ -163,8 +163,8 @@ pacman-contrib
 hddtemp
 
 # That hated other
+wine-mono
 wine-gecko
-wine
 winetricks
 
 # KDE Plasma
