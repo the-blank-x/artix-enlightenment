@@ -3,6 +3,7 @@
 # Automated ISO build script
 # 2019-2020, nous
 
+export TERM=xterm-256color
 source /usr/share/makepkg/util/message.sh
 colorize
 
@@ -64,12 +65,12 @@ done
 
 [[ $branch ]] || { _branch='stable'; branch=''; }
 [[ ${#profiles[@]} -eq 0 ]] && { echo; echo "${RED}No valid profiles selected!${ALL_OFF}"; echo; usage; }
-[[ ${#inits[@]} -eq 0 ]]        && { echo; echo "${RED}No valid inits selected!"${ALL_OFF}; echo; usage; }
+[[ ${#inits[@]} -eq 0 ]]	&& { echo; echo "${RED}No valid inits selected!"${ALL_OFF}; echo; usage; }
 
 echo "Building ISO(s):"
-echo "          branch          ${BOLD}${_branch}${ALL_OFF}"
-echo "          profiles        ${GREEN}${profiles[@]}${ALL_OFF}"
-echo "          inits           ${CYAN}${inits[@]}${ALL_OFF}"
+echo "		branch		${BOLD}${_branch}${ALL_OFF}"
+echo "		profiles 	${GREEN}${profiles[@]}${ALL_OFF}"
+echo "		inits		${CYAN}${inits[@]}${ALL_OFF}"
 
 mkdir -p ${PROFILES}
 
@@ -93,8 +94,21 @@ for profile in ${profiles[@]}; do
         rm -f ${PROFILES}/$profile/root-overlay/etc/rc.conf
         stamp=$(timestamp)
         sudo rm -fr /var/lib/artools/buildiso/$profile &
-        [[ $res == 0 ]] && { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log; } \
-                        || { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log; continue; }
+        if [ $res == 0 ]; then
+            echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log
+        else
+            echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log
+            echo "$stamp == ${RED}Retrying once     ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log
+            echo "$stamp == Re-building       ${_branch} $profile ISO with $init" >> $CWD/ISO_build.log
+            nice -n 20 buildiso${branch} -p $profile -i $init
+            res=$?
+            if [ $res == 0 ]; then
+                { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log; } \
+            else
+                { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log; continue; }
+            fi
+
+        fi
         mv -v ${WORKSPACE}/iso/$profile/artix-$profile-$init-*.iso ${REPO}/
         cd $REPO && { sha256sum artix-*.iso > ${REPO}/sha256sums & }
     done
