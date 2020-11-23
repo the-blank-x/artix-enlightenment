@@ -76,6 +76,7 @@ for profile in ${profiles[@]}; do
         echo "$stamp == Begin building    ${_branch} $profile ISO with $init" >> $logfile.log
         nice -n 20 buildiso${branch} -p $profile -i $init 2>&1 >> ${logfile_debug}.log
         res=$?
+        stamp=$(timestamp)
         if [ $res == 0 ]; then
             echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log
         else
