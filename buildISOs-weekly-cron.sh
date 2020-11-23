@@ -84,6 +84,7 @@ for profile in ${profiles[@]}; do
             echo "$stamp == Re-building       ${_branch} $profile ISO with $init" >> $logfile.log
             nice -n 20 buildiso${branch} -p $profile -i $init 2>&1 >> ${logfile_debug}.log
             res=$?
+            stamp=$(timestamp)
             if [ $res == 0 ]; then
                 { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; } \
             else
@@ -91,7 +92,7 @@ for profile in ${profiles[@]}; do
             fi
         fi
         rm -f ${PROFILES}/$profile/root-overlay/etc/{rc.conf,buildinfo}
-        sudo rm -fr /var/lib/artools/buildiso/$profile &
+        sudo rm -fr /var/lib/artools/buildiso/$profile
 #        [[ $res == 0 ]]	&& { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; } \
 #                        || { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
         mv -v ${WORKSPACE}/iso/$profile/artix-$profile-$init-*.iso ${REPO}/
