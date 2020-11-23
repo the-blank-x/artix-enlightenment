@@ -67,13 +67,13 @@ for profile in ${profiles[@]}; do
         logfile=$PROFILES/logs/buildiso-$DATE
         logfile_debug=$logfile-$profile-$init
         echo "#################################" >>$logfile.log
-        [[ $init == 'openrc' ]] && cp ${WORKSPACE}/tweaks/rc.conf ${PROFILES}/$profile/root-overlay/etc/
-        echo "VERSION_ID=$DATE" >| ${PROFILES}/$profile/root-overlay/etc/buildinfo
-        echo "VARIANT=${profile}-${init}" >> ${PROFILES}/$profile/root-overlay/etc/buildinfo
         stamp=$(timestamp)
         [[ $profile =~ 'community' ]] && [[ $init == 'runit' || $init == 's6' ]] && \
             { echo "$stamp == ${YELLOW}Skipping building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
         echo "$stamp == Begin building    ${_branch} $profile ISO with $init" >> $logfile.log
+        [[ $init == 'openrc' ]] && cp ${WORKSPACE}/tweaks/rc.conf ${PROFILES}/$profile/root-overlay/etc/
+        echo "VERSION_ID=$DATE" >| ${PROFILES}/$profile/root-overlay/etc/buildinfo
+        echo "VARIANT=${profile}-${init}" >> ${PROFILES}/$profile/root-overlay/etc/buildinfo
         nice -n 20 buildiso${branch} -p $profile -i $init 2>&1 >> ${logfile_debug}.log
         res=$?
         stamp=$(timestamp)
@@ -100,7 +100,7 @@ for profile in ${profiles[@]}; do
         cd $REPO && { sha256sum artix-*.iso > ${REPO}/sha256sums & }
     done
 done
-
+rm -f ${PROFILES}/$profile/root-overlay/etc/{rc.conf,buildinfo}
 rm -f ${REPO}/*community*{runit,s6}*
 port=$(cat $WORKSPACE/port)
 rsync $RSYNCARGS ${REPO}/ nous@iso.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"
