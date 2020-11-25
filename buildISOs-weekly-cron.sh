@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Automated ISO build script
+# Builds all profiles, all inits and rsyncs to ISO download server
 # 2019-2020, nous
 
 export TERM=xterm-256color

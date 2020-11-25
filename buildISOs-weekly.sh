@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Automated ISO build script
+# Builds select profiles / inits
 # 2019-2020, nous
 
 export TERM=xterm-256color
@@ -10,10 +11,22 @@ colorize
 WORKSPACE=/home/$USER/artools-workspace
 PROFILES=${WORKSPACE}/iso-profiles
 REPO=/srv/iso/weekly-iso
-CWD=`pwd`
+RSYNCARGS="-au --delete-after --bwlimit=5M"
+CWD=$PROFILES
+DATE=$(date +"%Y%m%d")
+
+mkdir -p ${PROFILES}
+
+cd $WORKSPACE
+if [[ -d $PROFILES ]]; then
+    cd $PROFILES
+    git pull
+else
+    git clone https://gitea.artixlinux.org/artix/iso-profiles.git
+fi
 
 cd $PROFILES
-all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|community$" | sort))
+all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|community$" | sort))
 all_inits=('openrc' 'runit' 's6')
 
 usage() {
@@ -72,44 +85,44 @@ echo "		branch		${BOLD}${_branch}${ALL_OFF}"
 echo "		profiles 	${GREEN}${profiles[@]}${ALL_OFF}"
 echo "		inits		${CYAN}${inits[@]}${ALL_OFF}"
 
-mkdir -p ${PROFILES}
-
-cd $WORKSPACE
-if [[ -d $PROFILES ]]; then
-    cd $PROFILES
-    git pull
-else
-    git clone https://gitea.artixlinux.org/artix/iso-profiles.git
-fi
 
 cd $PROFILES && git checkout master
-echo "#################################" >>$CWD/ISO_build.log
 for profile in ${profiles[@]}; do
     for init in ${inits[@]}; do
-        [[ $init == 'openrc' ]] && cp ${WORKSPACE}/rc.conf ${PROFILES}/$profile/root-overlay/etc/
+        logfile=$PROFILES/logs/buildiso-$DATE
+        logfile_debug=$logfile-$profile-$init
+        echo "#################################" >>$logfile.log
         stamp=$(timestamp)
-        echo "$stamp == Begin building    ${_branch} $profile ISO with $init" >> $CWD/ISO_build.log
-        nice -n 20 buildiso${branch} -p $profile -i $init
+#        [[ $profile =~ 'community' ]] && [[ $init == 'runit' || $init == 's6' ]] && \
+#            { echo "$stamp == ${YELLOW}Skipping building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
+        echo "$stamp == Begin building    ${_branch} $profile ISO with $init" >> $logfile.log
+        [[ $init == 'openrc' ]] && cp ${WORKSPACE}/tweaks/rc.conf ${PROFILES}/$profile/root-overlay/etc/
+        echo "VERSION_ID=$DATE" >| ${PROFILES}/$profile/root-overlay/etc/buildinfo
+        echo "VARIANT=${profile}-${init}" >> ${PROFILES}/$profile/root-overlay/etc/buildinfo
+        nice -n 20 buildiso${branch} -p $profile -i $init 2>&1 >> ${logfile_debug}.log
         res=$?
-        rm -f ${PROFILES}/$profile/root-overlay/etc/rc.conf
         stamp=$(timestamp)
-        sudo rm -fr /var/lib/artools/buildiso/$profile &
         if [ $res == 0 ]; then
-            echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log
+            echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log
         else
-            echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log
-            echo "$stamp == ${RED}Retrying once     ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log
-            echo "$stamp == Re-building       ${_branch} $profile ISO with $init" >> $CWD/ISO_build.log
-            nice -n 20 buildiso${branch} -p $profile -i $init
+            echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log
+            echo "$stamp == ${RED}Retrying once     ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log
+            echo "$stamp == Re-building       ${_branch} $profile ISO with $init" >> $logfile.log
+            nice -n 20 buildiso${branch} -p $profile -i $init 2>&1 >> ${logfile_debug}.log
             res=$?
+            stamp=$(timestamp)
             if [ $res == 0 ]; then
-                { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log; } \
+                { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; } \
             else
-                { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $CWD/ISO_build.log; continue; }
+                { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
             fi
-
         fi
+        rm -f ${PROFILES}/$profile/root-overlay/etc/{rc.conf,buildinfo}
+        sudo rm -fr /var/lib/artools/buildiso/$profile
+#        [[ $res == 0 ]]	&& { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; } \
+#                        || { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
         mv -v ${WORKSPACE}/iso/$profile/artix-$profile-$init-*.iso ${REPO}/
         cd $REPO && { sha256sum artix-*.iso > ${REPO}/sha256sums & }
     done
 done
+rm -f ${PROFILES}/$profile/root-overlay/etc/{rc.conf,buildinfo}
