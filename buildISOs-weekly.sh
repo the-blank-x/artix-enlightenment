@@ -15,7 +15,7 @@ RSYNCARGS="-au --delete-after --bwlimit=5M"
 CWD=$PROFILES
 DATE=$(date +"%Y%m%d")
 
-mkdir -p ${PROFILES}
+mkdir -p ${PROFILES}/logs
 
 cd $WORKSPACE
 if [[ -d $PROFILES ]]; then
