@@ -1,3 +1,0 @@
-#!/bin/bash
-
-[ -x /etc/rc.local.stop ] && /etc/rc.local.stop
