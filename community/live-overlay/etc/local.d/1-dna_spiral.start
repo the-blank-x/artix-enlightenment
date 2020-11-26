@@ -1,24 +1,31 @@
 #!/bin/sh
 
 # Use the DNA helix in community ISOs
-sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
+sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/g' \
     /etc/dconf/db/mate.d/theme \
     /usr/share/glib-2.0/schemas/99_cinnamon.gschema.override \
     /etc/skel/.config/pcmanfm/LXDE/desktop-items-0.conf \
     /etc/skel/.config/pcmanfm-qt/lxqt/settings.conf \
     /etc/skel/.config/pcmanfm-qt/default/settings.conf \
     /etc/skel/.config/kscreenlockerrc \
+    /etc/skel/.config/mate/backgrounds.xml \
+    /etc/schemas/99_gnome.gschema.override \
+    /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc \
+    /usr/share/plasma/look-and-feel/artix.dark/contents/layouts/org.kde.plasma.desktop-layout.js \
     /etc/skel/.config/plasmarc 2>/dev/null
+
+
 
 dconf update &
 
 # Also in live
 for USER in /home/*; do
-  sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/' \
+  sed -i 's/GradientGlowBlue/Artix_dna_spiral_dark/g' \
     $USER/.config/pcmanfm/LXDE/desktop-items-0.conf \
     $USER/.config/pcmanfm-qt/lxqt/settings.conf \
     $USER/.config/pcmanfm-qt/default/settings.conf \
     $USER/.config/kscreenlockerrc \
+    $USER/.config/plasma-org.kde.plasma.desktop-appletsrc \
     $USER/.config/plasmarc 2>/dev/null
 done
 
