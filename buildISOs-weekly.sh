@@ -15,8 +15,6 @@ RSYNCARGS="-au --delete-after --bwlimit=5M"
 CWD=$PROFILES
 DATE=$(date +"%Y%m%d")
 
-mkdir -p ${PROFILES}/logs
-
 cd $WORKSPACE
 if [[ -d $PROFILES ]]; then
     cd $PROFILES
@@ -86,15 +84,17 @@ echo "		profiles 	${GREEN}${profiles[@]}${ALL_OFF}"
 echo "		inits		${CYAN}${inits[@]}${ALL_OFF}"
 
 
+mkdir -p ${PROFILES}/logs
+
 cd $PROFILES && git checkout master
 for profile in ${profiles[@]}; do
     for init in ${inits[@]}; do
         logfile=$PROFILES/logs/buildiso-$DATE
         logfile_debug=$logfile-$profile-$init
-        echo "#################################" >>$logfile.log
+        echo "#################################" >> ${logfile}.log
         stamp=$(timestamp)
-#        [[ $profile =~ 'community' ]] && [[ $init == 'runit' || $init == 's6' ]] && \
-#            { echo "$stamp == ${YELLOW}Skipping building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
+        [[ $profile =~ 'community' ]] && [[ $init == 'runit' || $init == 's6' ]] && \
+            { echo "$stamp == ${YELLOW}Skipping building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
         echo "$stamp == Begin building    ${_branch} $profile ISO with $init" >> $logfile.log
         [[ $init == 'openrc' ]] && cp ${WORKSPACE}/tweaks/rc.conf ${PROFILES}/$profile/root-overlay/etc/
         echo "VERSION_ID=$DATE" >| ${PROFILES}/$profile/root-overlay/etc/buildinfo
