@@ -101,7 +101,10 @@ for profile in ${profiles[@]}; do
         cd $REPO && { sha256sum artix-*.iso > ${REPO}/sha256sums & }
     done
 done
+# Redundancy tasks
 rm -f ${PROFILES}/$profile/root-overlay/etc/{rc.conf,buildinfo}
+cp -Pf ${WORKSPACE}/tweaks/rc.conf.symlink ${PROFILES}/community-gtk/root-overlay/etc/rc.conf
+cp -Pf ${WORKSPACE}/tweaks/rc.conf.symlink ${PROFILES}/community-qt/root-overlay/etc/rc.conf
 rm -f ${REPO}/*community*{runit,s6}*
 port=$(cat $WORKSPACE/port)
 rsync $RSYNCARGS ${REPO}/ nous@iso.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"

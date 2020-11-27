@@ -1,3 +1,2 @@
 to_package/
-community-gtk/root-overlay/etc/rc.conf
-community-qt/root-overlay/etc/rc.conf
+**/root-overlay/etc/rc.conf
