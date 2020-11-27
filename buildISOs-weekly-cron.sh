@@ -72,7 +72,7 @@ for profile in ${profiles[@]}; do
         [[ $profile =~ 'community' ]] && [[ $init == 'runit' || $init == 's6' ]] && \
             { echo "$stamp == ${YELLOW}Skipping building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
         echo "$stamp == Begin building    ${_branch} $profile ISO with $init" >> $logfile.log
-        [[ $init == 'openrc' ]] && cp ${WORKSPACE}/tweaks/rc.conf ${PROFILES}/$profile/root-overlay/etc/
+        [[ $init == 'openrc' ]] && cp -f${PROFILES}/rc.conf ${PROFILES}/$profile/root-overlay/etc/
         echo "VERSION_ID=$DATE" >| ${PROFILES}/$profile/root-overlay/etc/buildinfo
         echo "VARIANT=${profile}-${init}" >> ${PROFILES}/$profile/root-overlay/etc/buildinfo
         nice -n 20 buildiso${branch} -p $profile -i $init 2>&1 >> ${logfile_debug}.log
@@ -103,8 +103,6 @@ for profile in ${profiles[@]}; do
 done
 # Redundancy tasks
 rm -f ${PROFILES}/$profile/root-overlay/etc/{rc.conf,buildinfo}
-cp -Pf ${WORKSPACE}/tweaks/rc.conf.symlink ${PROFILES}/community-gtk/root-overlay/etc/rc.conf
-cp -Pf ${WORKSPACE}/tweaks/rc.conf.symlink ${PROFILES}/community-qt/root-overlay/etc/rc.conf
 rm -f ${REPO}/*community*{runit,s6}*
 port=$(cat $WORKSPACE/port)
 rsync $RSYNCARGS ${REPO}/ nous@iso.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"
