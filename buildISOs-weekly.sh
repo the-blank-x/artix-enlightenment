@@ -15,6 +15,8 @@ RSYNCARGS="-au --delete-after --bwlimit=5M"
 CWD=$PROFILES
 DATE=$(date +"%Y%m%d")
 
+mkdir -p ${PROFILES}/logs
+
 cd $WORKSPACE
 if [[ -d $PROFILES ]]; then
     cd $PROFILES
@@ -83,8 +85,6 @@ echo "		branch		${BOLD}${_branch}${ALL_OFF}"
 echo "		profiles 	${GREEN}${profiles[@]}${ALL_OFF}"
 echo "		inits		${CYAN}${inits[@]}${ALL_OFF}"
 
-
-mkdir -p ${PROFILES}/logs
 
 cd $PROFILES && git checkout master
 for profile in ${profiles[@]}; do

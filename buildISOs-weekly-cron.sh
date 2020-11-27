@@ -67,7 +67,7 @@ for profile in ${profiles[@]}; do
     for init in ${inits[@]}; do
         logfile=$PROFILES/logs/buildiso-$DATE
         logfile_debug=$logfile-$profile-$init
-        echo "#################################" >>$logfile.log
+        echo "#################################" >> $logfile.log
         stamp=$(timestamp)
         [[ $profile =~ 'community' ]] && [[ $init == 'runit' || $init == 's6' ]] && \
             { echo "$stamp == ${YELLOW}Skipping building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
