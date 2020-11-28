@@ -11,7 +11,6 @@ colorize
 WORKSPACE=/home/$USER/artools-workspace
 PROFILES=${WORKSPACE}/iso-profiles
 REPO=/srv/iso/weekly-iso
-RSYNCARGS="-au --delete-after --bwlimit=5M"
 CWD=$PROFILES
 DATE=$(date +"%Y%m%d")
 
