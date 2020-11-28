@@ -32,6 +32,7 @@ memtest86+
 mkinitcpio
 mkinitcpio-openswap
 nano
+vi
 net-tools
 ntfs-3g
 @openrc acpid-openrc
