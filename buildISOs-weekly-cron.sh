@@ -103,7 +103,7 @@ for profile in ${profiles[@]}; do
     done
 done
 # Redundancy tasks
-rm -f ${PROFILES}/${profiles[@]}/root-overlay/etc/{rc.conf,buildinfo}
+rm -f ${PROFILES}/*/root-overlay/etc/{rc.conf,buildinfo}
 rm -f ${REPO}/artix-*community*{runit,s6}*.iso
 port=$(cat $WORKSPACE/port)
 rsync $RSYNCARGS ${REPO}/ nous@iso.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"

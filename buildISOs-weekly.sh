@@ -124,4 +124,4 @@ for profile in ${profiles[@]}; do
         cd $REPO && { sha256sum artix-*.iso > ${REPO}/sha256sums & }
     done
 done
-rm -f ${PROFILES}/$profile/root-overlay/etc/{rc.conf,buildinfo}
+rm -f ${PROFILES}/*/root-overlay/etc/{rc.conf,buildinfo}
