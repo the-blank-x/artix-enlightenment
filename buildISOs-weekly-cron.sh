@@ -80,24 +80,24 @@ for profile in ${profiles[@]}; do
         res=$?
         stamp=$(timestamp)
         if [ $res == 0 ]; then
-            echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log
+            echo "$stamp == ${GREEN}Finished building ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log
         else
-            echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log
-            echo "$stamp == ${RED}Retrying once     ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log
-            echo "$stamp == Re-building       ${_branch} $profile ISO with $init" >> $logfile.log
+            echo "$stamp == ${RED}Failed building   ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log
+            echo "$stamp == ${RED}Retrying once     ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log
+            echo "$stamp == Re-building       ${_branch} ${profile}-${init}" >> $logfile.log
             nice -n 20 buildiso${branch} -p $profile -i $init 2>&1 >> ${logfile_debug}.log
             res=$?
             stamp=$(timestamp)
             if [ $res == 0 ]; then
-                { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; } \
+                { echo "$stamp == ${GREEN}Finished building ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log; } \
             else
-                { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
+                { echo "$stamp == ${RED}Failed building   ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log; continue; }
             fi
         fi
         rm -f ${PROFILES}/$profile/root-overlay/etc/{rc.conf,buildinfo}
         sudo rm -fr /var/lib/artools/buildiso/$profile
-#        [[ $res == 0 ]]	&& { echo "$stamp == ${GREEN}Finished building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; } \
-#                        || { echo "$stamp == ${RED}Failed building   ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
+#        [[ $res == 0 ]]	&& { echo "$stamp == ${GREEN}Finished building ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log; } \
+#                        || { echo "$stamp == ${RED}Failed building   ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log; continue; }
         mv -v ${WORKSPACE}/iso/$profile/artix-$profile-$init-*.iso ${REPO}/
         cd $REPO && { sha256sum artix-*.iso > ${REPO}/sha256sums & }
     done
