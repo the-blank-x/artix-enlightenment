@@ -22,6 +22,15 @@ error: target not found: raw-thumbnailer
 ~~~
 
 
+* plasma
+
+~~~
+error: target not found: ttf-roboto
+error: target not found: ttf-roboto-mono
+error: target not found: xcursor-premium
+error: target not found: raw-thumbnailer
+~~~
+
 * community-qt
 
 ~~~
