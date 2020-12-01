@@ -6,7 +6,7 @@ TODO: package imports (disabled arch repos) to build
 
 * community profiles should have as many packages possible in artix repos, but eg FF, TB, libreoffice are excluded for now
 
-* please add here pakage lists for other profiles
+* please add here package lists for other profiles
 
 ### Missing
 
@@ -81,3 +81,12 @@ error: target not found: kvantum-qt5
 error: target not found: qt5ct
 error: target not found: mc
 ~~~
+
+* xfce
+
+~~~ 
+error: target not found: ttf-roboto
+error: target not found: ttf-roboto-mono
+error: target not found: xcursor-premium
+error: target not found: qt5ct
+error: target not found: midori
