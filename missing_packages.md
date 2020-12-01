@@ -88,5 +88,58 @@ error: target not found: mc
 error: target not found: ttf-roboto
 error: target not found: ttf-roboto-mono
 error: target not found: xcursor-premium
+error: target not found: pavucontrol
 error: target not found: qt5ct
+error: target not found: lightdm-gtk-greeter
 error: target not found: midori
+error: target not found: leafpad
+~~~
+
+* i3
+
+~~~
+error: target not found: ttf-roboto
+error: target not found: ttf-roboto-mono
+error: target not found: xorg-xkill
+error: target not found: xcursor-premium
+error: target not found: lightdm-gtk-greeter
+error: target not found: geany
+error: target not found: arandr
+error: target not found: sysstat
+error: target not found: otf-font-awesome
+error: target not found: nitrogen
+error: target not found: menumaker
+error: target not found: rofi
+error: target not found: xcursor-neutral
+error: target not found: archlinux-xdg-menu
+error: target not found: paprefs
+error: target not found: pavucontrol
+error: target not found: picom
+error: target not found: leafpad
+error: target not found: pcmanfm
+error: target not found: feh
+error: target not found: lxappearance-gtk3
+error: target not found: lxterminal
+error: target not found: midori
+error: target not found: viewnior
+error: target not found: qt5ct
+error: target not found: kvantum-qt5
+~~~
+
+* gnome
+
+~~~
+error: target not found: ttf-roboto
+error: target not found: ttf-roboto-mono
+error: target not found: xcursor-premium
+error: target not found: arc-gtk-theme
+error: target not found: xcursor-themes
+error: target not found: gnome-screensaver
+error: target not found: pavucontrol
+error: target not found: kvantum-qt5
+error: target not found: qt5ct
+error: target not found: mate-icon-theme-faenza
+error: target not found: midori
+error: target not found: leafpad
+~~~
+
