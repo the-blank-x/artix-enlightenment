@@ -1,10 +1,4 @@
 #!/bin/sh
 
-neofetch >| /etc/issue
-# Give login info in live environment
-live='/etc/issue.live'
-[[ -f $live ]] && { cat $live >> /etc/issue; sed -i '/live/d' /etc/rc.local; }
-rm -f $live &
-
 # Remove possible stale lockfile
 rm -f /var/lib/pacman/db.lck &
