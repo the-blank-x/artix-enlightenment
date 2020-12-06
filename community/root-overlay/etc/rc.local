@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# Remove possible stale lockfile
-rm -f /var/lib/pacman/db.lck &
