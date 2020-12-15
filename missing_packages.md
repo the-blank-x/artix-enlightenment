@@ -13,9 +13,6 @@ TODO: package imports (disabled arch repos) to build
 * lxqt
 
 ~~~
-error: target not found: ttf-roboto
-error: target not found: ttf-roboto-mono
-error: target not found: xcursor-premium
 error: target not found: cmst
 error: target not found: qpdfview
 error: target not found: raw-thumbnailer
@@ -25,18 +22,12 @@ error: target not found: raw-thumbnailer
 * plasma
 
 ~~~
-error: target not found: ttf-roboto
-error: target not found: ttf-roboto-mono
-error: target not found: xcursor-premium
 error: target not found: raw-thumbnailer
 ~~~
 
 * community-qt
 
 ~~~
-error: target not found: ttf-roboto
-error: target not found: ttf-roboto-mono
-error: target not found: xcursor-premium
 error: target not found: xorg-xwininfo
 error: target not found: cvs
 error: target not found: hddtemp
@@ -84,10 +75,7 @@ error: target not found: mc
 
 * xfce
 
-~~~ 
-error: target not found: ttf-roboto
-error: target not found: ttf-roboto-mono
-error: target not found: xcursor-premium
+~~~
 error: target not found: pavucontrol
 error: target not found: qt5ct
 error: target not found: lightdm-gtk-greeter
@@ -98,10 +86,7 @@ error: target not found: leafpad
 * i3
 
 ~~~
-error: target not found: ttf-roboto
-error: target not found: ttf-roboto-mono
 error: target not found: xorg-xkill
-error: target not found: xcursor-premium
 error: target not found: lightdm-gtk-greeter
 error: target not found: geany
 error: target not found: arandr
@@ -129,9 +114,6 @@ error: target not found: kvantum-qt5
 * gnome
 
 ~~~
-error: target not found: ttf-roboto
-error: target not found: ttf-roboto-mono
-error: target not found: xcursor-premium
 error: target not found: arc-gtk-theme
 error: target not found: xcursor-themes
 error: target not found: gnome-screensaver
