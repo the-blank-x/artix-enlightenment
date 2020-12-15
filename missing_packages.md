@@ -15,14 +15,6 @@ TODO: package imports (disabled arch repos) to build
 ~~~
 error: target not found: cmst
 error: target not found: qpdfview
-error: target not found: raw-thumbnailer
-~~~
-
-
-* plasma
-
-~~~
-error: target not found: raw-thumbnailer
 ~~~
 
 * community-qt
@@ -43,7 +35,6 @@ error: target not found: firefox-adblock-plus
 error: target not found: firefox-noscript
 error: target not found: firefox-ublock-origin
 error: target not found: libreoffice-fresh
-error: target not found: raw-thumbnailer
 error: target not found: youtube-dl
 error: target not found: fortune-mod
 error: target not found: redshift
