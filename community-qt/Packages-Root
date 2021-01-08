@@ -93,7 +93,7 @@ usb_modeswitch
 @openrc alsa-utils-openrc
 @openrc avahi-openrc
 @openrc networkmanager-openrc
-@openrc displaymanager-openrc
+@openrc sddm-openrc
 @openrc ntp-openrc
 @openrc openrc-settingsd
 @openrc bluez-openrc

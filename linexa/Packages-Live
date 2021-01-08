@@ -31,7 +31,7 @@ artix-docs
 intel-ucode
 amd-ucode
 sddm
-@openrc displaymanager-openrc
+@openrc sddm-openrc
 @runit sddm-runit
 @s6 sddm-s6
 cmst
