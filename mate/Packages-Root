@@ -9,7 +9,6 @@ crda
 dhclient
 diffutils
 dmraid
-dnsmasq
 dosfstools
 e2fsprogs
 ecryptfs-utils
