@@ -90,6 +90,7 @@ modemmanager
 usb_modeswitch
 
 @openrc alsa-utils-openrc
+@openrc dnsmasq-openrc
 @openrc avahi-openrc
 @openrc networkmanager-openrc
 @openrc sddm-openrc
@@ -97,6 +98,7 @@ usb_modeswitch
 @openrc openrc-settingsd
 @openrc bluez-openrc
 @runit alsa-utils-runit
+@runit dnsmasq-runit
 @runit avahi-runit
 @runit bluez-runit
 @runit networkmanager-runit
@@ -105,6 +107,7 @@ usb_modeswitch
 @runit blocaled
 @s6 blocaled
 @s6 alsa-utils-s6
+@s6 dnsmasq-s6
 @s6 avahi-s6
 @s6 bluez-s6
 @s6 networkmanager-s6
