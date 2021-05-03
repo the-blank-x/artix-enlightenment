@@ -60,7 +60,8 @@ HOOKS=(consolefont base udev autodetect modconf encrypt block filesystems keyboa
 #COMPRESSION="xz"
 #COMPRESSION="lzop"
 #COMPRESSION="lz4"
+COMPRESSION="zstd"
 
 # COMPRESSION_OPTIONS
 # Additional options for the compressor
-#COMPRESSION_OPTIONS=()
+COMPRESSION_OPTIONS=(-T0 -10)

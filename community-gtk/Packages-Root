@@ -118,7 +118,7 @@ modem-manager-gui
 
 # GTK pkgs
 geany-plugins
-syncthing-gtk
+syncthing-gtk-python3
 handbrake
 audacity
 gimp
