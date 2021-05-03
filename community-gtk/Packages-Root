@@ -1,149 +1,7 @@
-base
-@openrc elogind-openrc
-@runit elogind-runit
-@s6 elogind-s6
-acpi
-b43-fwcutter
-btrfs-progs
-crda
-dhclient
-diffutils
-dmraid
-dosfstools
-e2fsprogs
-ecryptfs-utils
-exfat-utils
-f2fs-tools
-grub
-htop
-inetutils
-iptables
-ipw2100-fw
-ipw2200-fw
-jfsutils
-linux
-linux-headers
-linux-firmware
-logrotate
-lsb-release
-man-db
-man-pages
-memtest86+
-mkinitcpio
-mkinitcpio-openswap
-nano
-vi
-net-tools
-ntfs-3g
-@openrc acpid-openrc
-@openrc cronie-openrc
-@openrc cryptsetup-openrc
-@openrc dhcpcd-openrc
-@openrc haveged-openrc
-@openrc lvm2-openrc
-@openrc mdadm-openrc
-@openrc nfs-utils-openrc
-@openrc rsync-openrc
-@openrc openssh-openrc
-@openrc wpa_supplicant-openrc
-@openrc metalog-openrc
-@runit acpid-runit
-@runit cronie-runit
-@runit cryptsetup-runit
-@runit dhcpcd-runit
-@runit haveged-runit
-@runit lvm2-runit
-@runit mdadm-runit
-@runit nfs-utils-runit
-@runit rsync-runit
-@runit openssh-runit
-@runit wpa_supplicant-runit
-@runit metalog-runit
-@s6 acpid-s6
-@s6 cronie-s6
-@s6 cryptsetup-s6
-@s6 dhcpcd-s6
-@s6 haveged-s6
-@s6 lvm2-s6
-@s6 mdadm-s6
-@s6 nfs-utils-s6
-@s6 rsync-s6
-@s6 openssh-s6
-@s6 wpa_supplicant-s6
-@s6 metalog-s6
-os-prober
-reiserfsprogs
-s-nail
-sudo
-sysfsutils
-texinfo
-usbutils
-which
-efibootmgr
-xfsprogs
-zsh
+# loads by default common/packages-{base,apps,xorg}
 
 alsa-firmware
-powertop
-inxi
 modemmanager
-usb_modeswitch
-
-@openrc alsa-utils-openrc
-@openrc dnsmasq-openrc
-@openrc avahi-openrc
-@openrc connman-openrc
-@openrc lightdm-openrc
-@openrc ntp-openrc
-@openrc openrc-settingsd
-@openrc bluez-openrc
-@runit alsa-utils-runit
-@runit dnsmasq-runit
-@runit avahi-runit
-@runit bluez-runit
-@runit connman-runit
-@runit ntp-runit
-@runit lightdm-runit
-@runit blocaled
-@s6 blocaled
-@s6 alsa-utils-s6
-@s6 dnsmasq-s6
-@s6 avahi-s6
-@s6 bluez-s6
-@s6 connman-s6
-@s6 ntp-s6
-@s6 lightdm-s6
-
-librabbitmq-c
-libmongoc
-
-terminus-font
-ttf-droid
-ttf-roboto
-ttf-roboto-mono
-ttf-inconsolata
-ttf-liberation
-
-xdg-user-dirs
-xdg-utils
-
-xorg-server
-xorg-xinit
-xorg-xhost
-
-xf86-input-vmmouse
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-dummy
-xf86-video-fbdev
-xf86-video-intel
-xf86-video-nouveau
-xf86-video-openchrome
-xf86-video-sisusb
-xf86-video-vesa
-xf86-video-vmware
-xf86-video-voodoo
-# Core ISO packages end here
 
 # Branding
 artix-grub-theme
@@ -315,3 +173,7 @@ mc
 screen
 tmux
 hdparm
+
+# syslog-ng optdepends
+# librabbitmq-c
+# libmongoc

@@ -12,7 +12,7 @@ WORKSPACE=/home/$USER/artools-workspace
 PROFILES=${WORKSPACE}/iso-profiles
 REPO=/srv/iso/weekly-iso
 #RSYNCARGS="-au --delete-after --bwlimit=5M"
-RSYNCARGS="-au --delete-after"
+RSYNCARGS="-au --delete-before"
 CWD=$PROFILES
 DATE=$(date +"%Y%m%d")
 
@@ -27,7 +27,7 @@ else
 fi
 
 cd $PROFILES
-all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|community$" | sort))
+all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|lowmem|community$" | sort))
 all_inits=('openrc' 'runit' 's6')
 
 usage() {
