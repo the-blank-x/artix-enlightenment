@@ -4,10 +4,8 @@ alsa-firmware
 modemmanager
 
 # Branding
-artix-grub-theme
-# artix-dark-theme
 artix-branding-base
-# artix-gtk-presets
+artix-gtk-presets
 artix-qt-presets
 xcursor-premium
 sddm-theme-artix
@@ -16,7 +14,6 @@ sddm-theme-artix
 lxqt
 
 # Basic usability apps
-# cmst
 kwrite
 falkon
 qpdfview
@@ -24,12 +21,12 @@ lxqt-archiver
 breeze-icons
 screengrab
 network-manager-applet
-# mpv
-# ffmpegthumbnailer
-# ffmpegthumbs
-# raw-thumbnailer
-# qt5-imageformats
-# gvfs-mtp
+mpv
+ffmpegthumbnailer
+ffmpegthumbs
+raw-thumbnailer
+qt5-imageformats
+gvfs-mtp
 
 # syslog-ng optdepends
 # librabbitmq-c

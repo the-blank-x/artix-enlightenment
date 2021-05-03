@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# Make all start-here icons Artix logos
+idir=/usr/share/icons
+cd $idir
+
+# Convert svg to png
+# Use graphicsmagick, because imagemagick segfaults with OpenCL
+for icon in $(find -not -path "*scalable*" -iname "start-here*.png"); do
+    sizeXY=$(sed -nE 's|.+/([0-9]+x[0-9]+)/.*|\1|p' <<< "$icon")
+    sizeX=$(sed -nE 's|.+/([0-9]+)/.*|\1|p' <<< "$icon")
+    if [ $sizeXY ]; then
+        gm convert -resize $sizeXY -background transparent artix/logo.svg "$icon" 2>/dev/null &
+    elif [ $sizeX ]; then
+        gm convert -resize $sizeX -background transparent artix/logo.svg "$icon" 2>/dev/null &
+    else
+        gm convert -resize 128 -background transparent artix/logo.svg "$icon" 2>/dev/null &
+    fi
+done
+
+# Copy over svg
+for icon in $(find -type f -iname "start-here*.svg"); do
+    cp -f artix/logo.svg $icon 2>/dev/null &
+done
+
+# Adwaita has some B/W icons
+for icon in $(find -not -path "*scalable*" -iname start-here-symbolic.symbolic.png); do
+    sizeXY=$(sed -nE 's|.+/([0-9]+x[0-9]+)/.*|\1|p' <<< "$icon")
+    sizeX=$(sed -nE 's|.+/([0-9]+)/.*|\1|p' <<< "$icon")
+    if [ $sizeXY ]; then
+        gm convert -resize $sizeXY -background transparent artix/logo-gray.svg "$icon" 2>/dev/null &
+    elif [ $sizeX ]; then
+        gm convert -resize $sizeX -background transparent artix/logo-gray.svg "$icon" 2>/dev/null &
+    else
+        gm convert -resize 128 -background transparent artix/logo-gray.svg "$icon" 2>/dev/null &
+    fi
+done
+
+# Comment out the chmod line below to run at every boot and catch new icons or updates
+chmod -x $0
