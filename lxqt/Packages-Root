@@ -6,15 +6,9 @@ lxqt
 sddm-theme-artix
 network-manager-applet
 
-# Basic usability apps
-mpv
-ffmpegthumbnailer
-ffmpegthumbs
-raw-thumbnailer
-qt5-imageformats
-gvfs-mtp
-kwrite
+# QT
 falkon
+kwrite
 qpdfview
 lxqt-archiver
 breeze-icons

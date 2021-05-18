@@ -19,17 +19,9 @@ openbox
 pcmanfm
 
 connman-gtk
-
-# Basic usability apps
-leafpad
-midori
-atril
 lightdm-gtk-greeter
 light-locker
-mpv
-ffmpegthumbnailer
-ffmpegthumbs
-raw-thumbnailer
-qt5-imageformats
-gvfs-mtp
 
+# GTK
+epiphany
+leafpad

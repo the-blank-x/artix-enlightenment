@@ -20,15 +20,10 @@ nemo-seahorse
 nemo-share
 xcursor-vanilla-dmz
 
-# Basic usability apps
-mpv
-ffmpegthumbnailer
-ffmpegthumbs
-raw-thumbnailer
-qt5-imageformats
-gvfs-mtp
-leafpad
-epiphany
-atril
 lightdm-gtk-greeter
 light-locker
+
+# GTK
+epiphany
+leafpad
+atril

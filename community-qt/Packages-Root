@@ -1,11 +1,7 @@
 # loads by default common/packages-{base,apps,xorg}
 
-alsa-firmware
-modemmanager
-
 # Branding
 artix-community-presets
-xcursor-premium
 sddm-theme-artix
 
 # Community goodies
@@ -47,11 +43,6 @@ firefox-adblock-plus
 firefox-noscript
 firefox-ublock-origin
 libreoffice-fresh
-mpv
-ffmpegthumbnailer
-ffmpegthumbs
-raw-thumbnailer
-qt5-imageformats
 youtube-dl
 pulseaudio-alsa
 p7zip
@@ -99,8 +90,7 @@ hexchat
 gufw
 meld
 
-# other stuff
-qt5-imageformats
+# Misc stuff
 gtk-engines
 accountsservice
 bluez-utils
@@ -119,7 +109,6 @@ konversation
 falkon
 ark
 dolphin-plugins
-ffmpegthumbs
 filelight
 filelight
 k3b
@@ -160,15 +149,14 @@ vertex-themes
 oxygen
 
 # KIO is still lacking
-gvfs-mtp
 gvfs-smb
 gvfs-afc
 gvfs-google
 gvfs-gphoto2
 
+# Others
 virtualbox-guest-utils
 mc
 screen
 tmux
 hdparm
-

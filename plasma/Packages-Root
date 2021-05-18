@@ -82,11 +82,5 @@ svgpart
 
 sddm-theme-artix
 
-# Basic usability apps
-mpv
-ffmpegthumbnailer
-ffmpegthumbs
-raw-thumbnailer
-qt5-imageformats
-gvfs-mtp
+# QT
 falkon

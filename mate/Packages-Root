@@ -23,16 +23,10 @@ mate-utils
 mozo
 
 connman-gtk
-
-# Basic usability apps
-mpv
-ffmpegthumbnailer
-ffmpegthumbs
-raw-thumbnailer
-qt5-imageformats
-gvfs-mtp
-leafpad
-midori
-atril
 lightdm-gtk-greeter
 light-locker
+
+# GTK
+epiphany
+leafpad
+atril

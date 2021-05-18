@@ -22,7 +22,15 @@ xorg-server
 xorg-xhost
 xorg-xinit
 
-# Branding common to all DE profiles, moved here
+# DE branding
 artix-gtk-presets
 artix-qt-presets
 xcursor-premium
+
+# Common DE packages
+mpv
+ffmpegthumbnailer
+ffmpegthumbs
+raw-thumbnailer
+qt5-imageformats
+gvfs-mtp
