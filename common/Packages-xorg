@@ -21,3 +21,8 @@ xf86-video-voodoo
 xorg-server
 xorg-xhost
 xorg-xinit
+
+# Branding common to all DE profiles, moved here
+artix-gtk-presets
+artix-qt-presets
+xcursor-premium

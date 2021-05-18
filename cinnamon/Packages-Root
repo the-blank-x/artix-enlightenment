@@ -1,13 +1,4 @@
-alsa-firmware
-modemmanager
-
-# Branding
-artix-grub-theme
-artix-dark-theme
-artix-branding-base
-artix-gtk-presets
-artix-qt-presets
-xcursor-premium
+# loads by default common/packages-{base,apps,xorg}
 
 # Cinnamon
 cinnamon
@@ -30,18 +21,14 @@ nemo-share
 xcursor-vanilla-dmz
 
 # Basic usability apps
-leafpad
-midori
-atril
-lightdm-gtk-greeter
-light-locker
 mpv
 ffmpegthumbnailer
 ffmpegthumbs
 raw-thumbnailer
 qt5-imageformats
 gvfs-mtp
-
-# syslog-ng optdepends
-# librabbitmq-c
-# libmongoc
+leafpad
+epiphany
+atril
+lightdm-gtk-greeter
+light-locker

@@ -1,17 +1,5 @@
 # loads by default common/packages-{base,apps,xorg}
 
-alsa-firmware
-modemmanager
-
-# Branding
-artix-grub-theme
-artix-dark-theme
-artix-branding-base
-artix-gtk-presets
-artix-qt-presets
-xcursor-premium
-sddm-theme-artix
-
 # KDE Plasma
 bluedevil
 breeze
@@ -58,11 +46,15 @@ powerdevil
 sddm-kcm
 systemsettings
 xdg-desktop-portal-kde
+breeze-icons
 
 # kde-system
 dolphin
+konqueror
 kcron
 khelpcenter
+kdegraphics-thumbnailers
+kdesdk-thumbnailers
 # ksystemlog
 partitionmanager
 
@@ -88,18 +80,13 @@ okular
 spectacle
 svgpart
 
-# Basic usability apps
-falkon
-breeze-icons
-mpv
-ffmpegthumbs
-#raw-thumbnailer
-#qt5-imageformats
-#gvfs-mtp
-#kdegraphics-thumbnailers
-#kdesdk-thumbnailers
-#konqueror
+sddm-theme-artix
 
-# syslog-ng optdepends
-# librabbitmq-c
-# libmongoc
+# Basic usability apps
+mpv
+ffmpegthumbnailer
+ffmpegthumbs
+raw-thumbnailer
+qt5-imageformats
+gvfs-mtp
+falkon

@@ -1,16 +1,8 @@
 # loads by default common/packages-{base,apps}
 
-modemmanager
-
 mkinitcpio-nfs-utils
 squashfs-tools
-nbd
-
-intel-ucode
-amd-ucode
 
 artix-grub-live
-artix-grub-theme
-artix-branding-base
 
 artix-live-@initsys@

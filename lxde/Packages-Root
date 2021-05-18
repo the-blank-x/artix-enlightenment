@@ -1,16 +1,5 @@
 # loads by default common/packages-{base,apps,xorg}
 
-alsa-firmware
-modemmanager
-
-# Branding
-artix-grub-theme
-artix-dark-theme
-artix-branding-base
-artix-gtk-presets
-artix-qt-presets
-xcursor-premium
-
 # LXDE
 gpicview
 lxappearance
@@ -29,8 +18,9 @@ lxterminal
 openbox
 pcmanfm
 
-# Basic usability apps
 connman-gtk
+
+# Basic usability apps
 leafpad
 midori
 atril
@@ -43,6 +33,3 @@ raw-thumbnailer
 qt5-imageformats
 gvfs-mtp
 
-# syslog-ng optdepends
-# librabbitmq-c
-# libmongoc

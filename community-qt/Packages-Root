@@ -4,9 +4,6 @@ alsa-firmware
 modemmanager
 
 # Branding
-artix-grub-theme
-artix-dark-theme
-artix-branding-base
 artix-community-presets
 xcursor-premium
 sddm-theme-artix
@@ -175,6 +172,3 @@ screen
 tmux
 hdparm
 
-# syslog-ng optdepends
-# librabbitmq-c
-# libmongoc

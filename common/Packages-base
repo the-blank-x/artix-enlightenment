@@ -1,7 +1,14 @@
+# Packages common in all profiles
 base
+intel-ucode
+amd-ucode
+artix-grub-theme
+artix-branding-base
+
 elogind-@initsys@
 acpi
 acpid-@initsys@
+alsa-firmware
 alsa-utils-@initsys@
 avahi-@initsys@
 b43-fwcutter
@@ -39,7 +46,9 @@ mdadm-@initsys@
 memtest86+
 mkinitcpio
 mkinitcpio-openswap
+modemmanager
 nano
+nbd
 net-tools
 nfs-utils-@initsys@
 ntfs-3g
