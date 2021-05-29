@@ -12,6 +12,6 @@ lightdm-gtk-greeter
 light-locker
 
 # GTK
-leafpad
 epiphany
+leafpad
 atril
