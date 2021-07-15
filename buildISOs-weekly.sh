@@ -26,7 +26,7 @@ fi
 
 cd $PROFILES
 all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|lowmem|community$" | sort))
-all_inits=('openrc' 'runit' 's6')
+all_inits=('openrc' 'runit' 's6' 'suite66')
 
 usage() {
     echo
@@ -68,7 +68,7 @@ while getopts "b:p:i:" option; do
         i)
             _init=$OPTARG
             for i in ${all_inits[@]}; do
-                [[ ${_init} =~ $i ]] && inits+=($i)
+                [[ ${_init} == $i ]] && inits+=($i)
             done
             [[ ${_init} == all ]]    && inits=(${all_inits[@]})
             ;;
@@ -92,7 +92,7 @@ for profile in ${profiles[@]}; do
         logfile_debug=$logfile-$profile-$init
         echo "#################################" >> ${logfile}.log
         stamp=$(timestamp)
-        [[ $profile =~ 'community' ]] && [[ $init == 'runit' || $init == 's6' ]] && \
+        [[ $profile =~ 'community' ]] && [[ $init != 'openrc' ]] && \
             { echo "$stamp == ${YELLOW}Skipping building ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log; continue; }
         echo "$stamp == Begin building    ${_branch} ${profile}-${init}" >> $logfile.log
         [[ $init == 'openrc' ]] && cp ${WORKSPACE}/tweaks/rc.conf ${PROFILES}/$profile/root-overlay/etc/
@@ -120,7 +120,7 @@ for profile in ${profiles[@]}; do
         sudo rm -fr /var/lib/artools/buildiso/$profile
 #        [[ $res == 0 ]]	&& { echo "$stamp == ${GREEN}Finished building ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log; } \
 #                        || { echo "$stamp == ${RED}Failed building   ${_branch} ${profile}-${init}${ALL_OFF}" >> $logfile.log; continue; }
-        mv -v ${WORKSPACE}/iso/$profile/artix-$profile-$init-*.iso ${REPO}/
+        mv -v ${WORKSPACE}/iso/$profile/artix-$profile-$init-*.iso ${REPO}/ 2>/dev/null
         cd $REPO && { sha256sum artix-*.iso > ${REPO}/sha256sums & }
     done
 done

@@ -28,7 +28,7 @@ fi
 
 cd $PROFILES
 all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|lowmem|community$" | sort))
-all_inits=('openrc' 'runit' 's6')
+all_inits=('openrc' 'runit' 's6' 'suite66')
 
 usage() {
     echo
@@ -70,7 +70,7 @@ for profile in ${profiles[@]}; do
         logfile_debug=$logfile-$profile-$init
         echo "#################################" >> $logfile.log
         stamp=$(timestamp)
-        [[ $profile =~ 'community' ]] && [[ $init == 'runit' || $init == 's6' ]] && \
+        [[ $profile =~ 'community' ]] && [[ $init != 'openrc' ]] && \
             { echo "$stamp == ${YELLOW}Skipping building ${_branch} $profile ISO with $init${ALL_OFF}" >> $logfile.log; continue; }
         echo "$stamp == Begin building    ${_branch} $profile ISO with $init" >> $logfile.log
         [[ $init == 'openrc' ]] && cp -f ${PROFILES}/rc.conf ${PROFILES}/$profile/root-overlay/etc/

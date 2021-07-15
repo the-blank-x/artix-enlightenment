@@ -13,7 +13,7 @@ CWD=`pwd`
 
 cd $PROFILES
 all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|community$" | sort))
-all_inits=('openrc' 'runit' 's6')
+all_inits=('openrc' 'runit' 's6' 'suite66')
 
 usage() {
     echo
@@ -55,7 +55,7 @@ while getopts "b:p:i:" option; do
         i)
             _init=$OPTARG
             for i in ${all_inits[@]}; do
-                [[ ${_init} =~ $i ]] && inits+=($i)
+                [[ ${_init} == $i ]] && inits+=($i)
             done
             [[ ${_init} == all ]]    && inits=(${all_inits[@]})
             ;;
