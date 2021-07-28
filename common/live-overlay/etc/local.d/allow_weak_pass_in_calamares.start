@@ -1,3 +1,4 @@
 :
 
 echo "allowWeakPasswords: true" >> /etc/calamares/modules/users.conf &>/dev/null
+echo "allowWeakPasswordsDefault: true" >> /etc/calamares/modules/users.conf &>/dev/null
