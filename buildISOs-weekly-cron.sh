@@ -2,7 +2,7 @@
 
 # Automated ISO build script
 # Builds all profiles, all inits and rsyncs to ISO download server
-# 2019-2020, nous
+# 2019-2021, nous
 
 export TERM=xterm-256color
 source /usr/share/makepkg/util/message.sh
