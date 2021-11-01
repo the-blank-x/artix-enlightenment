@@ -48,3 +48,6 @@ GRUB_THEME="/usr/share/grub/themes/artix/theme.txt"
 GRUB_SAVEDEFAULT="true"
 
 GRUB_DISABLE_LINUX_RECOVERY="true"
+
+# Probe for other installed operating systems
+GRUB_DISABLE_OS_PROBER="false"
