@@ -26,7 +26,7 @@ fi
 
 cd $PROFILES
 all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|lowmem|community$" | sort))
-all_inits=('openrc' 'runit' 's6' 'suite66')
+all_inits=('openrc' 'runit' 's6' 'suite66' 'dinit')
 
 usage() {
     echo
