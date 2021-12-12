@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Panic
+Comment=Emergency power off
+Exec=sudo /usr/local/sbin/panic
+Icon=/usr/share/icons/matefaenzadark/actions/64x64/skull.png
+Terminal=false
+Type=Application
+MimeType=text/plain
