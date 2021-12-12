@@ -28,7 +28,7 @@ fi
 
 cd $PROFILES
 all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|lowmem|community$" | sort))
-all_inits=('openrc' 'runit' 's6' 'suite66')
+all_inits=('openrc' 'runit' 's6' 'suite66' 'dinit')
 
 usage() {
     echo
@@ -104,7 +104,7 @@ for profile in ${profiles[@]}; do
 done
 # Redundancy tasks
 rm -f ${PROFILES}/*/root-overlay/etc/{rc.conf,buildinfo}
-rm -f ${REPO}/artix-*community*{runit,s6}*.iso
+rm -f ${REPO}/artix-*community*{runit,s6,dinit}*.iso	# their maintainers loathe community editions ;-)
 port=$(cat $WORKSPACE/port)
 rsync $RSYNCARGS ${REPO}/ nous@iso.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"
 rsync $RSYNCARGS ${REPO}/ nous@download.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"
