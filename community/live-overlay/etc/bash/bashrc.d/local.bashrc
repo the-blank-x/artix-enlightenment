@@ -21,6 +21,22 @@ alias rot47='tr !-~ P-~!-O'
 alias VirtualBox='QT_STYLE_OVERRIDE=kvantum-dark virtualbox'
 alias virtualbox='QT_STYLE_OVERRIDE=kvantum-dark virtualbox'
 
+#Some fun stuff
+timestamp() { date +"%Y/%m/%d_%H:%M:%S";}
+stopwatch() {
+    date1=`date +%s
+    while true; do
+        days=$(( $(($(date +%s) - date1)) / 86400 ))
+        echo -ne "$days day(s) and $(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r"
+        sleep 0.1
+    done
+}
+tvnoise() {
+    while true; do
+        printf "$(awk -v c="$(tput cols)" -v s="$RANDOM" 'BEGIN{srand(s);while(--c>=0){printf("\xe2\x96\\%s",sprintf("%o",150+int(10*rand())));}}')"
+    done
+}
+
 # No clobber, use >| instead of >
 set -C
 

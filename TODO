@@ -1,5 +1,11 @@
 TO-{DO,FIX} LIST
 
+community-gtk: installed system user autologins
+community-qt: LXQt is unresponsive at live boot; needs sddm restart to work
+lxqt: default icon theme is mate, must be breeze
+
+21-11-01
+========
 DONE = Symlinks in profiles are dereferenced, move 80-net-link-something.rules into package
 = Move some stuff out of the profiles into packages
 DONE  |_ Desktop settings -> artix-$DE-presets
@@ -12,21 +18,26 @@ Openbox not deleted from xsessions <-- see next
 DONE Make rc.local execute stuff in /etc/local.d under runit/s6:
      ls -l /sbin/init | sed 's/.*->\ \(.*\)-init/\1/'
 DONE mimeapps.list must be separate for each profile
-
 DONE Networkmanager in LXQt
 DONE GRUB remove 1280x1024
 
+2021-10-15
+==========
+DONE Fix libreoffice-7 bright side-pane; perhaps related, /etc/profile.d/libreoffice-fresh.sh: SAL_USE_VCLPLUGIN=gtk3 spurts (soffice:5766): Gtk-WARNING **: Theme parsing error: gtk.css:14:33: Failed to import: Error opening file /home/artix/.config/gtk-3.0/window_decorations.css: No such file or directory
+DONE Plasma is getting fucked-up with QT_* set to gtk; see kinfocenter - the alternative kvantum-dark has ugly widgets
+
 2020-03-08
 ==========
-
 DONE Use firefox-dark-reader instead of local/skel profile's
 DONE Also consider a few more addons from the group
 DONE Test firefox before releasing
 
 2020-04-18
+==========
 DONE XFCE4 profile
 
 2020-06-08
+==========
 Autologin-session selection
 Cinnamon fonts should change to Roboto 11 instead of M$ ones, for consistency
 DONE Remove screengrab from plasma
@@ -38,8 +49,4 @@ community-qt still boots into LXQt
 DONE The SDDM theme could use some darkening
 DONE Perhaps add man-pages to the ISOs
 
-2020-10-15
-Fix libreoffice-7 bright side-pane; perhaps related, /etc/profile.d/libreoffice-fresh.sh: SAL_USE_VCLPLUGIN=gtk3 spurts (soffice:5766): Gtk-WARNING **: Theme parsing error: gtk.css:14:33: Failed to import: Error opening file /home/artix/.config/gtk-3.0/window_decorations.css: No such file or directory
-Plasma is getting fucked-up with QT_* set to gtk; see kinfocenter - the alternative kvantum-dark has ugly widgets
-
-Fix plasma desktop icons (~/.local/share/.....)
+DONE Fix plasma desktop icons (~/.local/share/.....)
