@@ -27,7 +27,7 @@ kf5
 kde-system
 kde-network
 kde-utilities
-kdepim
+kde-pim-meta
 
 # LXQT
 lxqt
