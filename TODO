@@ -2,7 +2,11 @@ TO-{DO,FIX} LIST
 
 community-gtk: installed system user autologins
 community-qt: LXQt is unresponsive at live boot; needs sddm restart to work
-lxqt: default icon theme is mate, must be breeze
+DONE lxqt: default icon theme is mate, must be breeze
+xfce-suite66 calamares fails
+lxde-s6 calamares fails
+DONE lxde screenshot set to scrot
+
 
 21-11-01
 ========
