@@ -25,7 +25,7 @@ else
 fi
 
 cd $PROFILES
-all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|lowmem|anon|gnome|community$" | sort))
+all_profiles=($(find -maxdepth 1 -type d | sed 's|.*/||'| egrep -v "\.|common|linexa|git|logs|lowmem|anon|gnome|i3|community$" | sort))
 all_inits=('openrc' 'runit' 's6' 'suite66' 'dinit')
 
 usage() {
