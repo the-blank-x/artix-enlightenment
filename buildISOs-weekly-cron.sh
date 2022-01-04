@@ -59,8 +59,7 @@ echo "		branch		${BOLD}${_branch}${ALL_OFF}"
 echo "		profiles 	${GREEN}${profiles[@]}${ALL_OFF}"
 echo "		inits		${CYAN}${inits[@]}${ALL_OFF}"
 
-echo "REMOVING EXISTING ISOs IN 10 SECONDS!"
-sleep 10
+echo -n "REMOVING EXISTING ISOs IN 10 SECONDS!   "; i=9; while [ $i -ne 0 ]; do echo -n "$i "; let i--; sleep 1; done
 rm -fr $REPO/* &
 
 cd $PROFILES && git checkout master
