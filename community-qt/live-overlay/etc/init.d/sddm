@@ -1,0 +1,21 @@
+#!/usr/bin/openrc-run
+
+supervisor=supervise-daemon
+command="/usr/bin/sddm"
+
+depend() {
+    need localmount
+
+    after bootmisc consolefont modules netmount
+    after ypbind autofs openvpn gpm lircmd
+    after quota keymaps
+    before alsasound
+    want logind
+    use xfs
+
+    provide xdm display-manager
+}
+start_pre() {
+    sed -i 's/sion=lxqt/sion=plasma/' /etc/sddm.conf
+    sed -ie '/start_pre/,+4d' /etc/init.d/sddm
+}

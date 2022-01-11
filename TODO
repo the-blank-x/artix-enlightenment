@@ -1,6 +1,6 @@
 TO-{DO,FIX} LIST
 
-21-12-
+21-12-##
 community-gtk: installed system user autologins
 community-qt: LXQt is unresponsive at live boot; needs sddm restart to work
 DONE lxqt: default icon theme is mate, must be breeze
