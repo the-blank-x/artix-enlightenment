@@ -5,6 +5,7 @@ artix-community-presets
 sddm-theme-artix
 
 # Community goodies
+artix-archlinux-support
 base-devel
 xorg-xwininfo
 xorg-xprop
