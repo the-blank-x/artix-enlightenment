@@ -104,7 +104,7 @@ for profile in ${profiles[@]}; do
 done
 # Redundancy tasks
 rm -f ${PROFILES}/*/root-overlay/etc/{rc.conf,buildinfo}
-rm -f ${REPO}/artix-*community*{runit,s6,dinit}*.iso	# their maintainers loathe community editions ;-)
+rm -f ${REPO}/artix-*community*{runit,s6,dinit}*.iso
 port=$(cat $WORKSPACE/port)
-rsync $RSYNCARGS ${REPO}/ nous@iso.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"
 rsync $RSYNCARGS ${REPO}/ nous@download.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"
+rsync $RSYNCARGS ${REPO}/ nous@iso.artixlinux.org:/srv/iso/weekly-iso/ -e "ssh -p $port"
