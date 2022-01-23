@@ -115,6 +115,8 @@ inkscape
 hexchat
 gufw
 meld
+mcomix
+transmission-sequential-gtk
 lightdm-gtk-greeter
 light-locker
 atril
@@ -130,6 +132,7 @@ gtk-engines
 accountsservice
 bluez-utils
 trizen
+yaourtix
 hunspell-en_US
 picom
 
@@ -140,6 +143,7 @@ smb4k
 clementine
 projectm-pulseaudio
 projectm-sdl
+telegram-desktop
 
 # Uniform QT/GTK look
 kvantum-qt5
@@ -161,3 +165,7 @@ mc
 screen
 tmux
 hdparm
+ext4magic
+testdisk
+r-linux
+extundelete

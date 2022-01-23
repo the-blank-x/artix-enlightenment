@@ -90,12 +90,15 @@ inkscape
 hexchat
 gufw
 meld
+mcomix
+transmission-sequential-qt
 
 # Misc stuff
 gtk-engines
 accountsservice
 bluez-utils
 trizen
+yaourtix
 hunspell-en_US
 picom
 
@@ -106,6 +109,7 @@ smb4k
 clementine
 projectm-pulseaudio
 projectm-sdl
+telegram-desktop
 konversation
 falkon
 ark
@@ -161,3 +165,7 @@ mc
 screen
 tmux
 hdparm
+ext4magic
+testdisk
+r-linux
+extundelete
