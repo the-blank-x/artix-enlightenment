@@ -1,5 +1,9 @@
 TO-{DO,FIX} LIST
 
+22-01-29
+community editions don't use common/etc/hostname
+
+
 21-12-XX
 FIXED community-gtk: installed system user autologins
 FIXED community-qt: LXQt is unresponsive at live boot; needs sddm restart to work
