@@ -37,6 +37,7 @@ jfsutils
 linux
 linux-firmware
 linux-headers
+lsb-release
 logrotate
 lsb-release
 lvm2-@initsys@
