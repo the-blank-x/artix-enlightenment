@@ -1,0 +1,12 @@
+#!/bin/sh
+
+[ -d /etc/NetworkManager/conf.d ] && {
+cat >| /etc/NetworkManager/conf.d/fix-hostname-hang.conf << EOF
+[main]
+plugins=keyfile
+hostname-mode=none
+EOF
+}
+
+# Run once and disappear
+rm -f $0
