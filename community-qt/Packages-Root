@@ -10,10 +10,17 @@ base-devel
 xorg-xwininfo
 xorg-xprop
 subversion
+git
+cvs
 wireless_tools
 nftables
 pacman-contrib
 hddtemp
+
+# That hated other
+wine-mono
+wine-gecko
+winetricks
 
 # KDE Plasma
 plasma
@@ -23,10 +30,49 @@ kde-network
 kde-utilities
 kde-pim-meta
 
+# LXQT
+lxqt
+xscreensaver
+qpdfview
+trojita
+
 # Applications and helpers
+veracrypt
+firefox
+firefox-dark-reader
+firefox-adblock-plus
+firefox-noscript
+firefox-ublock-origin
+libreoffice-fresh
+youtube-dl
+pulseaudio-alsa
+p7zip
+unrar
+fortune-mod
+links
+redshift
+libunrar
+torsocks
+pulseaudio-bluetooth
+frei0r-plugins
+movit
+lib32-mesa-vdpau
+libva-mesa-driver
+libva-vdpau-driver
+libva-intel-driver
+gst-plugins-good
+gst-plugins-bad
+gst-libav
+mesa-demos
+opencl-mesa
+ocl-icd
+chafa
+tigervnc
 strace
 ltrace
 lsof
+# pacman frontend
+octopi
 
 breeze-icons
 
@@ -34,6 +80,20 @@ breeze-icons
 network-manager-applet
 modem-manager-gui
 
+# GTK pkgs
+geany-plugins
+#syncthing-gtk-python3
+handbrake
+audacity
+gimp
+inkscape
+hexchat
+gufw
+meld
+mcomix
+transmission-sequential-qt
+
+# Misc stuff
 gtk-engines
 accountsservice
 bluez-utils
@@ -43,10 +103,26 @@ hunspell-en_US
 picom
 
 # Qt pkgs
+kdenlive
+digikam
+smb4k
+clementine
+projectm-pulseaudio
+projectm-sdl
+telegram-desktop
+konversation
 falkon
+ark
 dolphin-plugins
 filelight
+k3b
 kaddressbook
+kamera
+kamoso
+kcalc
+kcharselect
+kcolorchooser
+kdf
 kdegraphics-thumbnailers
 kdesdk-thumbnailers
 kate
@@ -88,3 +164,7 @@ mc
 screen
 tmux
 hdparm
+ext4magic
+testdisk
+r-linux
+extundelete
