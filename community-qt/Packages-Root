@@ -18,6 +18,8 @@ pacman-contrib
 hddtemp
 
 # That hated other
+lib32-artix-archlinux-support
+playonlinux
 wine-mono
 wine-gecko
 winetricks

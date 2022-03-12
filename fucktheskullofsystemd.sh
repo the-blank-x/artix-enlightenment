@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # nous,2019-2020
 
 # How to use
@@ -19,17 +19,16 @@
 source /usr/share/makepkg/util/message.sh
 colorize
 
-echo "$BOLD You should run this from inside screen(1) or tmux(1),"
+echo "$ALL_OFF$BOLD You should run this from inside screen(1) or tmux(1),"
 echo "$BOLD especially if this is a remote box."
 echo "$BOLD Use a terminal/session with a large scrollback buffer"
 echo
-echo "$RED Last chance to press CTRL-C, ENTER to continue."
-read
+read -n 1 -p "$RED Last chance to press CTRL-C, ENTER to continue. "
 echo
 echo "$CYAN Starting operation FUCKTHESKULLOFSYSTEMD"
 echo
 
-testerror() { [[ $res > 0 ]] && { echo "$RED An error occured, aborting to prevent incomplete conversion. Fix it and re-run the script FROM THE LAST STEP ONWARDS."; exit 1; } }
+testerror() { [[ $res > 0 ]] && { echo "$RED An error occured, aborting to prevent incomplete conversion. Fix it and re-run the script FROM THE LAST STEP ONWARDS.$ALL_OFF"; exit 1; } }
 [[ $1 == openrc ]] && target=openrc
 [[ $1 == runit ]] && target=runit
 
@@ -40,10 +39,10 @@ testerror() { [[ $res > 0 ]] && { echo "$RED An error occured, aborting to preve
 rm -f /var/lib/pacman/db.lck
 sed -i s/Arch/Artix/g /etc/default/grub
 # A full systemd update is needed, because libsystemd->systemd-libs
-echo "$GREEN Updating system first, if this fails abort and update manually; then re-run the script $ALL_OFF"
+echo "$GREEN Updating Arch system first, if this fails abort and update manually; then re-run the script $ALL_OFF"
 pacman -Syu --noconfirm
 res=$?; testerror
-pacman -S --needed --noconfirm wget nano
+pacman -S --needed --noconfirm wget nano rsync
 res=$?; testerror
 
 cd /etc
@@ -52,6 +51,7 @@ echo "$GREEN Replacing Arch repositories with Artix $ALL_OFF"
 mv -vf pacman.conf pacman.conf.arch
 wget https://gitea.artixlinux.org/packagesP/pacman/raw/branch/master/trunk/pacman.conf -O /etc/pacman.conf
 res=$?; testerror
+sed -i 's/#Parallel/Parallel/' /etc/pacman.conf
 mv -vf pacman.d/mirrorlist pacman.d/mirrorlist-arch
 wget https://gitea.artixlinux.org/packagesA/artix-mirrorlist/raw/branch/master/trunk/mirrorlist -O pacman.d/mirrorlist
 res=$?; testerror
@@ -62,9 +62,8 @@ echo "$GREEN Refreshing package databases $ALL_OFF"
 pacman -Syy --noconfirm
 res=$?; testerror
 echo
-echo "$GREEN Press ENTER and answer <yes> to the next question to make sure all packages come from Artix repos $ALL_OFF"
+read -n 1 -p "$GREEN Press ENTER and answer <yes> to the next question to make sure all packages come from Artix repos $ALL_OFF "
 echo
-read
 pacman -Scc
 
 echo "$GREEN Importing Artix keys $ALL_OFF"
@@ -75,24 +74,26 @@ res=$?; testerror
 pacman-key --lsign-key 95AEC5D0C1E294FC9F82B253573A673A53C01BC2
 res=$?; testerror
 
-systemctl list-units --state=running | grep -v systemd | awk '{print $1}' | grep service > /root/daemon.list
+[ -x /bin/systemctl ] && systemctl list-units --state=running | grep -v systemd | awk '{print $1}' | grep service > /root/daemon.list
 echo "$MAGENTA Your systemd running units are saved in /root/daemon.list.$ALL_OFF"
 echo
-echo "$RED Do not proceed if you've seen errors above - press CTRL-C to abort or ENTER to continue $ALL_OFF"
-read
+read -n 1 -p "$RED Do not proceed if you've seen errors above - press CTRL-C to abort or ENTER to continue $ALL_OFF "
 echo
 echo "$GREEN Downloading systemd-free packages from Artix $ALL_OFF"
-pacman -Sw --noconfirm base base-devel openrc-system grub linux-lts linux-lts-headers elogind-openrc openrc netifrc grub mkinitcpio archlinux-mirrorlist net-tools rsync nano lsb-release opensysusers opentmpfiles
+pacman -Sw --noconfirm base base-devel openrc-system grub linux-lts linux-lts-headers elogind-openrc openrc netifrc grub mkinitcpio archlinux-mirrorlist net-tools rsync nano lsb-release esysusers etmpfiles
 res=$?; testerror
 echo "$YELLOW This is the best part: removing systemd $ALL_OFF"
 pacman -Rdd --noconfirm systemd systemd-libs systemd-sysvcompat pacman-mirrorlist dbus
-res=$?; testerror
 
 # Previous pacman-mirrorlist removal also deleted this, restoring
 cp -vf pacman.d/mirrorlist.artix pacman.d/mirrorlist
 
 echo "$GREEN Installing clean Artix packages $ALL_OFF"
-pacman -S --noconfirm --overwrite '*' base base-devel openrc-system linux-lts linux-lts-headers elogind-openrc openrc netifrc grub mkinitcpio archlinux-mirrorlist net-tools rsync nano lsb-release connman opensysusers opentmpfiles
+pacman -S --noconfirm elogind-openrc
+pacman -Qqn | pacman -S --noconfirm --overwrite '*' -
+res=$?; testerror
+echo "$GREEN Installing Artix system packages $ALL_OFF"
+pacman -S --noconfirm --needed --overwrite '*' base base-devel openrc-system linux-lts linux-lts-headers elogind-openrc openrc netifrc grub mkinitcpio archlinux-mirrorlist net-tools rsync nano lsb-release connman esysusers etmpfiles artix-branding-base
 res=$?; testerror
 echo "$GREEN Installing service files $ALL_OFF"
 pacman -S --noconfirm --needed at-openrc xinetd-openrc cronie-openrc haveged-openrc hdparm-openrc openssh-openrc syslog-ng-openrc connman-openrc
@@ -111,9 +112,9 @@ echo "$BOLD Activating standard network interface naming (i.e. enp72^7s128%397 -
 echo "$BOLD If you prefer the persistent naming, remove the last line from /etc/default/grub"
 echo "$BOLD and run $ALL_OFF grub-mkconfig -o /boot/grub/grub.cfg $BOLD when this script prompts for reboot."
 echo
-echo "Press ENTER $ALL_OFF"
-read
+read -n 1 -p "Press ENTER $ALL_OFF"
 echo 'GRUB_CMDLINE_LINUX="net.ifnames=0"' >>/etc/default/grub
+echo 'GRUB_DISABLE_OS_PROBER="false"' >>/etc/default/grub
 
 pacman -S --needed --noconfirm netifrc
 echo "============================="
@@ -128,7 +129,7 @@ echo "$BOLD you MUST enable the daemon manually BEFORE rebooting.         "
 echo "$BOLD You will be given the option at the end of this procedure.    "
 echo "$BOLD Default setting is DHCP for eth0, should be enough for most.$ALL_OFF"
 echo "==============================================================="
-read
+read -n 1 -p " "
 nano /etc/conf.d/net
 ln -sf /etc/init.d/net.lo /etc/init.d/net.eth0
 rc-update add net.eth0 default
@@ -166,7 +167,7 @@ echo "=Or switch console/terminal and type as root="
 echo "= $BOLD         rc-service add connmand        $ALL_OFF  ="
 echo "=    then switch back here and continue     ="
 echo "============================================="
-read
+read -n 1 -p " "
 sync
 mount -f / -o remount,ro
 echo s >| /proc/sysrq-trigger
