@@ -146,6 +146,7 @@ clementine
 projectm-pulseaudio
 projectm-sdl
 telegram-desktop
+xdg-desktop-portal-gtk
 
 # Uniform QT/GTK look
 kvantum-qt5
