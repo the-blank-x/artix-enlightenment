@@ -9,7 +9,7 @@ network-manager-applet
 # QT
 falkon
 kwrite
-qpdfview
+xpdf
 lxqt-archiver
 breeze-icons
 screengrab
