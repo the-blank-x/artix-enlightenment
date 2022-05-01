@@ -9,7 +9,7 @@ pavucontrol
 
 connman-gtk
 lightdm-gtk-greeter
-light-locker
+gnome-keyring
 
 # GTK
 epiphany
