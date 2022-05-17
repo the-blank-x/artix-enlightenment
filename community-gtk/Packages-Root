@@ -15,10 +15,10 @@ wireless_tools
 nftables
 pacman-contrib
 hddtemp
+timeshift
 
 # That hated other
 lib32-artix-archlinux-support
-playonlinux
 wine-mono
 wine-gecko
 winetricks
@@ -146,6 +146,7 @@ clementine
 projectm-pulseaudio
 projectm-sdl
 telegram-desktop
+xdg-desktop-portal
 xdg-desktop-portal-gtk
 
 # Uniform QT/GTK look
@@ -172,3 +173,4 @@ ext4magic
 testdisk
 r-linux
 extundelete
+rdesktop
