@@ -1,0 +1,29 @@
+name: Enlightenment
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        container:
+            image: artixlinux/base:latest
+            volumes:
+                - /out
+        steps:
+            - name: Setup
+              run: |
+                cd ~
+                sudo modprobe loop
+                sudo pacman -Syu --needed --noconfirm artools iso-profiles
+                buildiso -p base -q
+                cp /etc/artools/artools.conf ~/.config/artools
+                git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
+                buildiso -p base -q
+
+            - uses: actions/upload-artifact@v2
+              with:
+                name: isos
+                path: /out
