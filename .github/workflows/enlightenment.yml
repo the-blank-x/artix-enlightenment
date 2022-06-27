@@ -16,8 +16,8 @@ jobs:
             - name: Setup
               run: |
                 cd ~
-                sudo modprobe loop
-                sudo pacman -Syu --needed --noconfirm artools iso-profiles
+                modprobe loop
+                pacman -Syu --needed --noconfirm artools iso-profiles
                 buildiso -p base -q
                 mkdir -p ~/.config/artools
                 cp /etc/artools/artools.conf ~/.config/artools
