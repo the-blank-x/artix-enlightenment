@@ -19,6 +19,7 @@ jobs:
                 sudo modprobe loop
                 sudo pacman -Syu --needed --noconfirm artools iso-profiles
                 buildiso -p base -q
+                mkdir -p ~/.config/artools
                 cp /etc/artools/artools.conf ~/.config/artools
                 git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
                 buildiso -p base -q
