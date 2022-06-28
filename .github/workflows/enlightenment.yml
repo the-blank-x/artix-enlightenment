@@ -21,7 +21,8 @@ jobs:
               run: |
                 cd ~
                 # modprobe loop
-                pacman -Syu --needed --noconfirm artools base-devel git
+                # https://forum.artixlinux.org/index.php?topic=1094.msg8068#msg8068
+                pacman -Syu --needed --noconfirm artools base-devel git dosfstools libisoburn squashfstools
                 buildiso -p base -q > /dev/null || true
                 git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
                 mkdir -p ~/.config/artools
