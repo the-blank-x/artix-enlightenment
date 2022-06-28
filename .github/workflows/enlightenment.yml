@@ -12,6 +12,9 @@ jobs:
             image: artixlinux/base:latest
             volumes:
                 - /out
+            # https://forums.docker.com/t/mount-permission-denied-inside-container/67991
+            options: –-cap-add SYS_ADMIN
+
         steps:
             - name: Setup
               run: |
