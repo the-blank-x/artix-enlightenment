@@ -18,11 +18,12 @@ jobs:
                 cd ~
                 # modprobe loop
                 pacman -Syu --needed --noconfirm artools base-devel git
-                buildiso -p base -q || true
+                buildiso -p base -q > /dev/null || true
                 git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
                 mkdir -p ~/.config/artools
                 cp artools-workspace/iso-profiles/workflow-data/artools-iso.conf ~/.config/artools
                 buildiso -p base -q || true
+                buildiso -p base
 
             - uses: actions/upload-artifact@v2
               with:
