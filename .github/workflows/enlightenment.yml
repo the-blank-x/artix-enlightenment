@@ -26,7 +26,7 @@ jobs:
                 mkdir -p ~/.config/artools
                 cp artools-workspace/iso-profiles/workflow-data/artools-iso.conf ~/.config/artools
                 buildiso -p base -q || true
-                buildiso -p base
+                buildiso -p base || (dmesg && false)
 
             - uses: actions/upload-artifact@v2
               with:
