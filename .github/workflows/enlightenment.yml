@@ -13,7 +13,7 @@ jobs:
             volumes:
                 - /out
             # https://forums.docker.com/t/mount-permission-denied-inside-container/67991
-            options: –-cap-add SYS_ADMIN
+            options: --cap-add SYS_ADMIN
 
         steps:
             - name: Setup
