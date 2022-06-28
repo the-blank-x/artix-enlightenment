@@ -17,7 +17,7 @@ jobs:
               run: |
                 cd ~
                 # modprobe loop
-                pacman -Syu --noconfirm artools
+                pacman -Syu --needed --noconfirm artools base-devel
                 buildiso -p base -q || true
                 mkdir -p ~/.config/artools
                 cp /etc/artools/artools-iso.conf ~/.config/artools
