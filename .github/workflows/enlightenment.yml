@@ -17,10 +17,30 @@ jobs:
               run: |
                 cd ~
                 # modprobe loop
-                pacman -Syu --noconfirm artools iso-profiles
+                pacman -Syu --noconfirm artools
                 buildiso -p base -q || true
                 mkdir -p ~/.config/artools
-                cp /etc/artools/artools.conf ~/.config/artools
+                cp /etc/artools/artools-iso.conf ~/.config/artools
+                patch ~/.config/artools/artools-iso.conf << EOF
+                --- a/etc/artools/artools-iso.conf      2022-06-10 19:30:42.000000000 +0700
+                +++ b/etc/artools/artools-iso.conf      2022-06-28 22:35:13.756874677 +0700
+                @@ -3,13 +3,13 @@
+                 #############################################
+
+                 # the iso storage directory
+                -# ISO_POOL="${WORKSPACE_DIR}/iso"
+                +ISO_POOL="/out"
+
+                 # the dist release; default: auto
+                 # ISO_VERSION=$(date +%Y%m%d)
+
+                 # possible values: openrc, runit, s6, suite66, dinit
+                -# INITSYS="openrc"
+                +INITSYS="runit"
+
+                 # gpg key; leave empty or commented to skip img signing
+                 # GPG_KEY=""
+                EOF
                 git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
                 buildiso -p base -q || true
 
