@@ -40,7 +40,7 @@ jobs:
 
                  # gpg key; leave empty or commented to skip img signing
                  # GPG_KEY=""
-                EOF
+                EOF || (cat ~/.config/artools/artools-iso.conf.rej && false)
                 git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
                 buildiso -p base -q || true
 
