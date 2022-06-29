@@ -25,7 +25,7 @@ jobs:
                 buildiso -p base -q > /dev/null || true
                 git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
                 mkdir -p ~/.config/artools
-                cp artools-workspace/iso-profiles/workflow-data/artools-iso.conf ~/.config/artools
+                mv artools-workspace/iso-profiles/workflow-data/artools-*.conf ~/.config/artools
                 buildiso -p base -q || true
                 buildiso -p base || (dmesg && false)
 
