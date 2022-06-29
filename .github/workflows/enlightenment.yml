@@ -21,6 +21,8 @@ jobs:
               run: |
                 cd ~
                 # modprobe loop
+                # do we really need a kernel for a container?
+                pacman -Rns linux linux-firmware
                 pacman -Syu --needed --noconfirm artools base-devel git
                 buildiso -p base -q > /dev/null || true
                 git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
@@ -28,8 +30,8 @@ jobs:
                 mv artools-workspace/iso-profiles/workflow-data/artools-*.conf ~/.config/artools
                 buildiso -p base -q || true
                 buildiso -p base || (dmesg && false)
+                mv /out/base/artix-base-runit-*-x86_64.iso /out
 
             - uses: actions/upload-artifact@v2
               with:
-                name: isos
-                path: /out
+                path: /out/artix-base-runit-*-x86_64.iso
