@@ -21,8 +21,6 @@ jobs:
               run: |
                 cd ~
                 # modprobe loop
-                # do we really need a kernel for a container?
-                pacman -Rns linux linux-firmware
                 pacman -Syu --needed --noconfirm artools base-devel git
                 buildiso -p base -q > /dev/null || true
                 git clone --depth 1 https://github.com/${{ github.repository }} artools-workspace/iso-profiles
